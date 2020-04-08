@@ -3,7 +3,7 @@
 /* =Common Styles
 -------------------------------------------------------------- */
 body {
-	background-color: #fff;
+	background-color: #ffffff;
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 	font-weight: 300;
@@ -20,15 +20,15 @@ a:active, a:focus {
 }
 
     .ml9 {
-        position: relative;
-        font-weight: 200;
+        position: center;
+        font-weight: 220;
         font-size: 4em;
     }
   
   .ml9 .text-wrapper {
     position: relative;
     display: inline-block;
-    padding-top: 0.2em;
+    padding-top: 0.05em;
     padding-right: 0.05em;
     padding-bottom: 0.1em;
     overflow: hidden;
