@@ -3,8 +3,10 @@
 body {
   margin: 0;
   font-family:'Roboto', sans-serif;
+  /* background-color: #333335; */
 	font-size: 18px;
-	font-weight: 300;
+    font-weight: 300;
+
 }
 html {
 	height: 100%;
@@ -17,12 +19,14 @@ canvas {
 /* ---- particles.js container ---- */
 
 #particles-js {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   min-height: 513px;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   background-color: #333335;
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,6 +53,7 @@ position: relative;
 display: inline-block;
 padding-top: 0.05em;
 padding-right: 0.05em;
+padding-left: 0.05;
 padding-bottom: 0.05em;
 overflow: hidden;
 }
@@ -262,7 +267,7 @@ animation: fadein 1s ease-in-out  ;
     font-weight: 100;
     font-size: 50px ;
     margin-top: 75px ;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
 
 .lead {
@@ -349,6 +354,7 @@ animation: fadein 1s ease-in-out  ;
  #reld .item > .circle-hold {
     position: relative;
     margin: 0 auto;
+    padding: 0%;
     margin-bottom: 20px;
     width: 80px;
     height: 80px;
@@ -382,7 +388,7 @@ animation: fadein 1s ease-in-out  ;
 }
 
  #reld .item > .circle-hold > i{
-    color: #fff;
+    color: #34eb3a;
     display: block;
     position: absolute;
     top: 50%;
@@ -393,7 +399,7 @@ animation: fadein 1s ease-in-out  ;
     margin-top: -30px;
     margin-left: -30px;
     font-size: 40px;
-   	color: rgb(250, 242, 242);
+   	color: #ffffff;
     text-align: center;
 }
 
