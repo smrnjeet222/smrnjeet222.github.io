@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:700,400,300,100|Montserrat:400,700);/* ---- reset ---- */
 
 body {
-  margin: 0;
-  font-family:'Roboto', sans-serif;
-  background-color: #333335;
+    margin: 0;
+    font-family:'Roboto', sans-serif;
+    background-color: #1f1f1f;
 	font-size: 18px;
     font-weight: 300;
 
@@ -27,7 +27,7 @@ canvas {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #333335;
+  background-color: #1f1f1f;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
