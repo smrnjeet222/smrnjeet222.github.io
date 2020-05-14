@@ -1,16 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:700,400,300,100|Montserrat:400,700);/* ---- reset ---- */
 
-body {
+html,body {
     margin: 0;
     font-family:'Roboto', sans-serif;
-    background-color: #1f1f1f;
+    background-color: #242424;
 	font-size: 18px;
     font-weight: 300;
+    overflow-y: auto;
+    overflow-x: auto;
+    max-width: 100%;
+    height: 100%;
+}
 
-}
-html {
-	height: 100%;
-}
 canvas {
   display: block;
   /* vertical-align: bottom; */
@@ -38,31 +39,49 @@ canvas {
   height: 100%;
 }
 
-
 a:active, a:focus {
   text-decoration: none;
 }
 .ml9 {
-  position: center;
-  font-weight: 220;
-  font-size: 4em;
+    position: center;
+    font-weight: 220;
+    font-size: 4em;
+    /* text-shadow: 0 3px 0 darkcyan, 0px 3px 5px rgba(0,0,0,0.5); */
 }
 
+
 .ml9 .text-wrapper {
-position: relative;
-display: inline-block;
-padding-top: 0.05em;
-padding-right: 0.05em;
-padding-left: 0.05;
-padding-bottom: 0.05em;
-overflow: hidden;
+    position: relative;
+    display: inline-block;
+    padding-top: 0.05em;
+    padding-right: 0.05em;
+    padding-left: 0.05;
+    padding-bottom: 0.05em;
+    overflow: hidden;
+    font-weight: 250;
+
 }
 
 .ml9 .letter {
-transform-origin: 50% 100%;
-display: inline-block;
-line-height: 1em;
+    position: relative;
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+	text-shadow: 0 1px 0 #1b8070, 0px 3px 3px rgba(0,0,0,0.8);
+	top: 0;
+    /* transition: 0.1s ease-in-out; */
 }
+
+.ml9 .letter:hover {
+	text-shadow: 0 2px 0 #29c2aa, 0 3px 0 #23a691, 0 4px 0 #1c8574, 0 5px 0 #196e60, 0 6px 0 #134d43, 0 7px 0 #0c2b26, 0px 10px 10px rgba(0,0,0,0.8);
+	top: -5px;
+}
+.ml9 .letter:active {
+	text-shadow: none;
+	top: 0;
+	text-shadow: 0px 0px 7px rgba(0,0,0,0.5) !important;
+}
+
 
 a {
 color: #cdcdcd;
@@ -150,8 +169,22 @@ font-size: 26px;
 
 
 .big-logo {
-font-size: 80px;
+    font-size: 80px;
 }
+
+.big-logo img {
+    transition: transform .3s, filter 0.5s ease-in-out;
+    filter: grayscale(15%);
+}
+.big-logo:hover img {
+    filter: grayscale(0);
+    transform: scale(1.2) ;
+}
+.big-logo:active img {
+    transition: transform .2s;
+    transform: scale(0.8) ;
+}
+
 
 img {
 border-radius: 5% ;
@@ -277,6 +310,7 @@ animation: fadein 1s ease-in-out  ;
 .lead strong {
 	color: #fff;
 }
+
 .blink_me {
   animation: blinker 0.5s linear infinite;
 }
@@ -317,9 +351,6 @@ animation: fadein 1s ease-in-out  ;
 .animate-color-7 { background-color:#F2784B; }
 .animate-color-8 { background-color:#65C6BB; }
 .animate-color-9 { background-color:#F64747; } */
-
-
-
 
 /* =Jumbotron Main
 -------------------------------------------------------------- */
@@ -370,13 +401,20 @@ animation: fadein 1s ease-in-out  ;
 	animation: bounce 0.6s linear;
 }
 
- #reld .item > .circle-hold:hover {
-    cursor: hand;
-    -webkit-transform: scale(1.4);
-    -moz-transform: scale(1.4);
-    transform: scale(1.4); 
+#reld .item > .circle-hold:hover {
+   cursor: hand;
+   -webkit-transform: scale(1.4);
+   -moz-transform: scale(1.4);
+   transform: scale(1.4); 
 
 }
+
+#reld .item:active {
+   -webkit-transform: scale(0.7);
+   -moz-transform: scale(0.7);
+   transform: scale(0.7); 
+}
+
 
 @keyframes rotation {
     from {
@@ -511,8 +549,5 @@ footer hr {
         transform: translateY(0);
     }
 }
-
-
-
 
 

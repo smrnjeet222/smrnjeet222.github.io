@@ -3,10 +3,10 @@
 particlesJS("particles-js", {
     "particles": {
         "number": {
-            "value": 70,
+            "value": 100,
             "density": {
                 "enable": true,
-                "value_area": 700
+                "value_area": 500
             }
         },
         "color": {
@@ -15,36 +15,36 @@ particlesJS("particles-js", {
         "shape": {
             "type": "circle",
             "stroke": {
-                "width": 0.2,
-                "color": "#08fcd3"
+                "width": 0,
+                "color": "#08fdd8"
             },
             "polygon": {
-                "nb_sides": 8
+                "nb_sides": 6
             },
             "image": {
-                "src": "images/icon.ico",
+                "src": "",
                 "width": 100,
                 "height": 100
             }
         },
         "opacity": {
-            "value": 0.4,
-            "random":true,
+            "value": 0.8,
+            "random": true,
             "anim": {
                 "enable": true,
                 "speed": 1,
-                "opacity_min": 0.1,
-                "sync": true
+                "opacity_min": 0.2,
+                "sync": false
             }
         },
         "size": {
             "value": 2,
             "random": true,
             "anim": {
-                "enable":false,
+                "enable": false,
                 "speed": 4,
                 "size_min": 0.1,
-                "sync": false
+                "sync": true
             }
         },
         "line_linked": {
@@ -56,9 +56,9 @@ particlesJS("particles-js", {
         },
         "move": {
             "enable": true,
-            "speed": 4,
+            "speed": 5,
             "direction": "none",
-            "random": false,
+            "random": true,
             "straight": false,
             "out_mode": "out",
             "bounce": false,
@@ -70,7 +70,7 @@ particlesJS("particles-js", {
         }
     },
     "interactivity": {
-        "detect_on": "canvas",
+        "detect_on": "windows",
         "events": {
             "onhover": {
                 "enable": true,
@@ -84,7 +84,7 @@ particlesJS("particles-js", {
         },
         "modes": {
             "grab": {
-                "distance": 190,
+                "distance": 200,
                 "line_linked": {
                     "opacity": 0.8
                 }
@@ -93,12 +93,12 @@ particlesJS("particles-js", {
                 "distance": 400,
                 "size": 4,
                 "duration": 1,
-                "opacity": 8,
+                "opacity": 0.9,
                 "speed": 3
             },
             "repulse": {
-                "distance": 210,
-                "duration": 0.2
+                "distance": 200,
+                "duration": 0.4
             },
             "push": {
                 "particles_nb": 4
@@ -108,6 +108,6 @@ particlesJS("particles-js", {
             }
         }
     },
-    "retina_detect": false
+    "retina_detect": true
 });
 
