@@ -30,3 +30,35 @@ ul li:hover ~ li
     opacity: 0;
     cursor: pointer;   
 }
+#text {
+	font-size: 8em;
+	/* width: 100%; */
+	text-align: center;
+	margin: auto 0;
+}
+
+#text:first-of-type {
+	margin: 90px 0;
+}
+
+#text a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #ffffff;
+	text-shadow: 0 2px 0 #721e1e, 0px 2px 5px rgba(0,0,0,0.5);
+	position: relative;
+	top: 0;
+	transition: all 0.1s ease-in;
+	transition: top 0.1s ease-in, text-shadow 0.1s ease-in;
+}
+
+#text a:hover {
+	text-shadow: 0 2px 0 #d84f4f, 0 4px 0 #d54646, 0 6px 0 #ce3333, 0 8px 0 #b92e2e, 0 10px 0 #912525, 0 12px 0 #721e1e, 0px 12px 10px rgba(0,0,0,0.5);
+	top: -12px;
+}
+
+#text a:active {
+	text-shadow: none;
+	top: 0;
+	text-shadow: 0px 0px 7px rgba(0,0,0,0.5) !important;
+}
