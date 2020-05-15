@@ -3,7 +3,7 @@
 html,body {
     margin: 0;
     font-family:'Roboto', sans-serif;
-    background-color: #242424;
+    background-color: #0a0a0a;
 	font-size: 18px;
     font-weight: 300;
     overflow-y: auto;
@@ -26,8 +26,9 @@ canvas {
     z-index: 0;
     background-color: #242424;
     /* ________HoverEffect________________ */
-    background: url('..//images/background.jpg') no-repeat center center; 
-    transform: scale(1.1); 
+    /* background: url('..//images/background.jpg') no-repeat center center;  */
+    background-image: radial-gradient(#242424, #0a0a0a); 
+    /* transform: scale(1.1);  */
     background-size: cover;
 
     /* ____________ParallaxEffect_____________ */
