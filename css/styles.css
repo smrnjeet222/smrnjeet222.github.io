@@ -26,7 +26,8 @@ canvas {
     z-index: 0;
     background-color: #242424;
     /* ________HoverEffect________________ */
-    background: url('..//images/background.jpg') no-repeat center center;  
+    background: url('..//images/background.jpg') no-repeat center center; 
+    transform: scale(1.1); 
     background-size: cover;
 
     /* ____________ParallaxEffect_____________ */
