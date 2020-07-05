@@ -536,7 +536,6 @@ footer hr {
 }
 
 @media (min-width: 768px) {
-    .ml9 {font-size: 4em;}
     .dropdown .dropdown-menu{ display:block; opacity:0; -webkit-transition:all 200ms ease-in; -moz-transition:all 200ms ease-in; -ms-transition:all 200ms ease-in; -o-transition:all 200ms ease-in; transition:all 200ms ease-in; }
     .dropdown:hover .dropdown-menu { display:block; opacity:1; }
 }
