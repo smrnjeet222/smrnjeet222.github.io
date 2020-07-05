@@ -20,7 +20,21 @@ canvas {
   display: block;
   /* vertical-align: bottom; */
 }
-
+#main-footer {
+    position: fixed;
+    /* width : 100%; */
+    bottom: 0em;
+    right: 1em;
+    text-align: center;
+    padding : 1px;
+    font-size: small;
+    font-family: Tahoma, Verdana;
+    text-decoration: none;
+    color : #757575;
+}
+#main-footer :hover{
+    color : #c0c0c0;
+}
 /* ---- particles.js container ---- */
 
 #particles-js {
@@ -500,7 +514,8 @@ footer hr {
 /* =Media Queries
 -------------------------------------------------------------- */
 @media (max-width:767px) {
-	.text-center-xs { text-align:center; }
+    .text-center-xs { text-align:center; }
+    .ml9 {font-size: 3em;}
     .mt10-xs { margin-top:10px; }
     .mt20-xs { margin-top:20px; }
     .mt30-xs { margin-top:30px; }
@@ -521,6 +536,7 @@ footer hr {
 }
 
 @media (min-width: 768px) {
+    .ml9 {font-size: 4em;}
     .dropdown .dropdown-menu{ display:block; opacity:0; -webkit-transition:all 200ms ease-in; -moz-transition:all 200ms ease-in; -ms-transition:all 200ms ease-in; -o-transition:all 200ms ease-in; transition:all 200ms ease-in; }
     .dropdown:hover .dropdown-menu { display:block; opacity:1; }
 }
@@ -531,7 +547,8 @@ footer hr {
 
 
 @media (min-width: 768px) and (max-width:992px) {
-	.text-center-sm { text-align:center; }
+    .text-center-sm { text-align:center; }
+    .ml9 {font-size: 3em;}
     .mt10-sm { margin-top:10px; }
     .mb10-sm { margin-bottom:10px; }
 	.mt20-sm { margin-top:20px; }
