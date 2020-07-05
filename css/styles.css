@@ -535,10 +535,6 @@ footer hr {
     .jumbotron.jumbotron-register h1 { font-size:40px; }
 }
 
-@media (min-width: 768px) {
-    .dropdown .dropdown-menu{ display:block; opacity:0; -webkit-transition:all 200ms ease-in; -moz-transition:all 200ms ease-in; -ms-transition:all 200ms ease-in; -o-transition:all 200ms ease-in; transition:all 200ms ease-in; }
-    .dropdown:hover .dropdown-menu { display:block; opacity:1; }
-}
 
 @media (min-width: 1024px) and (max-width:1366px){
 	#reld .item > .circle-hold {width:100px;height:100px;}
