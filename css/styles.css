@@ -101,7 +101,7 @@ a:active, a:focus {
 }
 
 .ml9 .letter:hover {
-	text-shadow: 0 2px 0 #29c2aa, 0 3px 0 #23a691, 0 4px 0 #1c8574, 0 5px 0 #196e60, 0 6px 0 #134d43, 0 7px 0 #0c2b26, 0px 10px 10px rgba(0,0,0,0.8);
+	text-shadow: 0 1px 0 #29c2aa,0 2px 0 #29c2aa, 0 3px 0 #23a691, 0 4px 0 #1c8574, 0 5px 0 #196e60, 0 6px 0 #134d43, 0 7px 0 #0c2b26, 0px 10px 10px rgba(0,0,0,0.8);
 	top: -5px;
 }
 .ml9 .letter:active {
@@ -576,4 +576,39 @@ footer hr {
     }
 }
 
+/* LIGHT MODE */
 
+#theme-toggle {
+    position: fixed;
+    top: 0.5em;
+    right: 0.5em;
+}
+
+.button{
+    background: #cacaca;
+    border: none;
+    color: #252525;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:focus {outline:0;}
+
+/* @media (prefers-color-scheme: light) {
+    #reld .item > .circle-hold {filter: invert(1) ;}
+    .ml9 {filter: invert(1) ;}
+    #main-footer {filter: invert(1) ;color: #252525; }
+    #particles-js { background-image: radial-gradient(#e0e0e0, #4d4d4d); }
+} */
+
+/* @media (min-width: 768px) {
+    #reld .item > .circle-hold {filter: invert(1) ;}
+    .ml9 {filter: invert(1) ;}
+    #main-footer {filter: invert(1) ;color: #252525; }
+    #particles-js { background-image: radial-gradient(#e0e0e0, #4d4d4d); }
+} */

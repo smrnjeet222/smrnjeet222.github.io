@@ -1,0 +1,9 @@
+
+@media (min-width: 0px) {
+    #reld .item > .circle-hold {filter: invert(1) ;}
+    .ml9 {filter: invert(1) ;}
+    #main-footer {filter: invert(1) ; color: #252525; }
+    #particles-js { filter: invert(1); background-image: radial-gradient( #000000 ,#9b9b9b); }
+    .button {filter: invert(1) ;}
+    html,body{background-color: #646464;}
+}
