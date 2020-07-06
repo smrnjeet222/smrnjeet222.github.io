@@ -12,6 +12,7 @@ anime.timeline({loop: false })
   scale: [0, 0],
   duration: 900,
   elasticity: 600,
+  delay:2500,
 }).add({
   targets: '.ml9 .letter',
   translateY: ["1.1em", 0],

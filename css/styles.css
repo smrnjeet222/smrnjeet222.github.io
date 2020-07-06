@@ -63,6 +63,7 @@ canvas {
 #main {
   height: 100%;
   width: 100%;
+  display: none;
 }
 
 a:active, a:focus {
@@ -560,7 +561,7 @@ footer hr {
         opacity: 0%;
         transform: translateY(-30px);
     }
-    100% {
+    90% {
         opacity: 100%;
         transform: translateY(0);
     }
@@ -571,7 +572,7 @@ footer hr {
         opacity: 0%;
         transform: translateY(30px);
     }
-    100% {
+    90% {
         opacity: 100%;
         transform: translateY(0);
     }
@@ -581,21 +582,22 @@ footer hr {
 
 #theme-toggle {
     position: fixed;
-    top: 0.5em;
-    right: 0.5em;
+    top: 0.3em;
+    right: 0.3em;
 }
 
 .button{
     background: #cacaca;
     font-family:'Roboto', sans-serif;
+    opacity: 0;
     border: none;
     color: #252525;
-    padding: 10px;
+    padding: 8px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    display: none;
+    font-size: 14px;
+    margin: 2px 2px;
     cursor: pointer;
 }
 
