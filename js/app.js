@@ -1,11 +1,16 @@
 /* ---- particles.js config ---- */
-function invertHex(hex) {
-    return (Number(`0x1${hex}`) ^ 0xFFFFFF).toString(16).substr(1).toUpperCase();
-}
+
+// let elem = document.getElementById('particles-js');
+// let style = getComputedStyle(elem);
+// let rgb = style.color;
 
 
-let clr = "#"+"08fdd8";
+// var ctx = document.createElement('canvas').getContext('2d');
+// ctx.strokeStyle = rgb;
 
+// let clr = ctx.strokeStyle;
+
+let clr = '#08fdd8';
 
 particlesJS("particles-js", {
     "particles": {

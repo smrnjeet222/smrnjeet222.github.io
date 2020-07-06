@@ -43,6 +43,7 @@ canvas {
     height: 100%;
     z-index: 0;
     background-image: radial-gradient(#252525, #030303); 
+    color: #08fdd8;
     /* ________HoverEffect________________ */
     /* background: url('..//images/background.jpg') no-repeat center center;  */
     /* transform: scale(1.1); 
@@ -586,6 +587,7 @@ footer hr {
 
 .button{
     background: #cacaca;
+    font-family:'Roboto', sans-serif;
     border: none;
     color: #252525;
     padding: 10px;
