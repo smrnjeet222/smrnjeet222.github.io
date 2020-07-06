@@ -4,6 +4,8 @@
     .ml9 {filter: invert(1) ;}
     #main-footer {filter: invert(1) ; color: #252525; }
     #particles-js { filter: invert(1); background-image: radial-gradient( #000000 ,#9b9b9b); }
-    .button {filter: invert(1) ;}
+    .button {filter: invert(1) ; }
+    .button span{display: none;}
+    .button:after{content:"Switch to dark mode";}
     html,body{background-color: #646464;}
 }

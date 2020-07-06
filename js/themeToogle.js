@@ -11,11 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // if it's light -> go dark
         if(themeStylesheet.href.includes('lght')){
             themeStylesheet.href = 'css/styles.css';
-            themeToggle.innerText = 'Switch to light mode';
         } else {
             // if it's dark -> go light
             themeStylesheet.href = 'css/lght.css';
-            themeToggle.innerText = 'Switch to dark mode';
         }
 
         // save the preference to localStorage
