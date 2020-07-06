@@ -3,10 +3,9 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    opacity: 1;
     background-image: radial-gradient(#252525, #030303); 
-    animation: fade 2.8s ease;
-    animation-iteration-count: 1;
+    z-index: 100;
+    animation: fade 3s ease;
   }
   
   .loader > span {
@@ -37,7 +36,7 @@
     }
   } 
   @keyframes fade {
-    60% {
+    70% {
         opacity: 1;
     }
     100% {
