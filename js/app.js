@@ -3,13 +3,9 @@ function invertHex(hex) {
     return (Number(`0x1${hex}`) ^ 0xFFFFFF).toString(16).substr(1).toUpperCase();
 }
 
-let lght = false;
 
 let clr = "#"+"08fdd8";
 
-if (lght){
-    clr = "#"+ invertHex("08fdd8");
-}
 
 particlesJS("particles-js", {
     "particles": {

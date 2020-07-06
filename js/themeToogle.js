@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
 
     themeToggle.addEventListener('click', () => {
-        // if it's light -> go dark
-        if(themeStylesheet.href.includes('lght')){
-            themeStylesheet.href = 'css/styles.css';
-        } else {
+
+        if(!themeStylesheet.href.includes('lght')){
             // if it's dark -> go light
             themeStylesheet.href = 'css/lght.css';
+        }else{
+            // if it's light -> go dark
+            themeStylesheet.href = '';
         }
-
         // save the preference to localStorage
         localStorage.setItem('theme',themeStylesheet.href)  
     })
