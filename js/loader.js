@@ -15,7 +15,7 @@ function init() {
     setTimeout(() => (prt.style.opacity = 1), 100);
     setTimeout(() => (main.style.opacity = 1), 100);
     setTimeout(() => (btn.style.opacity = 1), 50);
-  }, 2000);
+  }, 2200);
 }
 
 window.onload = init();

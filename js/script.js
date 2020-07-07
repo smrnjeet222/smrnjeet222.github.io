@@ -12,7 +12,7 @@ textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='l
     scale: [0, 0],
     duration: 900,
     elasticity: 600,
-    delay:2200,
+    delay:2500,
   }).add({
     targets: '.ml9 .letter',
     translateY: ["1.1em", 0],
