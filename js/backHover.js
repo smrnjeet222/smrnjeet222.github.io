@@ -31,7 +31,11 @@ $(window).on('mousemove click', function(e) {
 
 });
 
-moveBackground();
+if (window.innerWidth > 767) {
+  moveBackground();
+}
+
+
 
 //___________________ PARALLAX EFFECT________________________________
 

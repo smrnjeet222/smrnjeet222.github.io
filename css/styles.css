@@ -42,7 +42,7 @@ canvas {
     width: 100%;
     height: 100%;
     z-index: 0;
-    background-image: radial-gradient(#252525, #030303); 
+    background-image: radial-gradient(#252525, #030303);
     color: #08fdd8;
     /* ________HoverEffect________________ */
     /* background: url('..//images/background.jpg') no-repeat center center;  */
@@ -529,9 +529,6 @@ footer hr {
 	.section-padding { padding-top:50px;  }
 	.section-padding-top { padding-top:50px; }
 	.section-title h2 { font-size:34px; }
-    .breadcrumb-holder { padding:12px 0 12px 0; }
-    .ticker { height:40px; }
-    .ticker h1 { height:40px; }
     .big-logo { font-size:50px; }
     .jumbotron.jumbotron-register { height:initial; }
     .jumbotron.jumbotron-register h1 { font-size:40px; }

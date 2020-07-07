@@ -10,7 +10,7 @@
     .button {filter: invert(1) ; }
     .button span{display: none;}
     .button:after{content:"Switch to dark mode";}
-    html,body{background-color: #646464;}
+    html,body{background-color: #ffffff00;}
     .loader {
         background-image: radial-gradient( #000000 ,#414141); 
         filter: invert(1);
