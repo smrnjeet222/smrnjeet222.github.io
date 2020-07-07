@@ -4,11 +4,9 @@ const btn = document.querySelector('.button');
 const loader = document.getElementById('load');
 
 function init() {
-  
   setTimeout(() => {
-    
     loader.href = '';
-    
+
     main.style.display = 'block';
     btn.style.display = 'inline-block';
 
@@ -18,4 +16,5 @@ function init() {
   }, 2200);
 }
 
-window.onload = init();
+main.addEventListener("load", init());
+
