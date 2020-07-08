@@ -19,7 +19,7 @@ window.onload = function () {
       scale: [0, 0],
       duration: 900,
       elasticity: 600,
-      delay: 2500,
+      delay: 2100,
     })
     .add({
       targets: ".ml9 .letter",
