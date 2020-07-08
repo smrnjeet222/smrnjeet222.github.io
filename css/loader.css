@@ -1,14 +1,19 @@
 .loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: radial-gradient(#252525, #030303); 
-    z-index: 100;
-    animation: fade 8s ease;
-  }
-  
-  .loader > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: radial-gradient(#252525, #030303);
+  z-index: 100;
+
+  font-family: "ZCOOL KuaiLe", cursive;
+  font-size: 40px;
+  color: #29c2aa;
+
+  animation: fade 8s ease;
+}
+
+/* .loader > span {
     display: inline-block;
     background-color: #29c2aa;
     width: 0px;
@@ -38,12 +43,26 @@
       height: 16px;
       transform: translate3d(0, -16px, 0);
     }
-  } 
-  @keyframes fade {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+  }  */
+@keyframes fade {
+  0% {
+    opacity: 1;
   }
+  100% {
+    opacity: 0;
+  }
+}
+
+.loader::after {
+  content: "\2026";
+  display: inline-block;
+  overflow: hidden;
+  animation: dots steps(4, end) 2s infinite;
+  width: 0px;
+}
+
+@keyframes dots {
+  to {
+    width: 1.1em;
+  }
+}
