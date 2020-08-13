@@ -1,211 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
-    <meta name="msapplication-navbutton-color" content="#303030" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#303030" />
-    <meta name="theme-color" content="#303030" />
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Simranjeet Singh</title>
-    <link rel="stylesheet" href="css/loader.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@1.0.0/css/all.min.css"> -->
+    <title>Simranjeet Singh | Full Stack Developer | Python Developer</title>
+
+    <link rel="icon" href="svgs/icon.png" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
     />
-    <link rel="icon" href="img/icon.png" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link id="theme" rel="stylesheet" type="text/css" href="" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link type="text/css" media="all" href="style.css" rel="stylesheet" />
+    <!-- <link type="text/css" media="all" href="light.css" rel="stylesheet" /> -->
   </head>
-
   <body>
-    <div id="particles-js"></div>
-
-    <div class="loader">Loading</div>
-
-    <div id="main">
-      <div class="jumbotron-main" id="home">
-        <div
-          class="container center-vertically-holder"
-          style="vertical-align: bottom; padding-top: 80px;"
+    <div id="nav-bar">
+      <a href="https://smrnjeet222.github.io/">
+        <img class="logo" src="svgs/home.png" alt="logo" />
+      </a>
+      <nav>
+        <a href="index.html" class="link"
+          ><i class="fas fa-home fa-2x"></i>
+          <div class="overlay">
+            <div class="text">HOME</div>
+          </div></a
         >
-          <div class="center-vertically">
-            <div
-              id="scaleReveal"
-              class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center"
-            >
-              <span class="big-logo">
-                <a
-                  href="https://smrnjeet222.github.io/CleanPortfolio/"
-                  title="Clean Page"
-                  style="text-decoration: none;"
-                >
-                  <img
-                    src="img/Profile.jpg"
-                    height="200em"
-                    alt="Simranjeet Singh"
-                  />
-                </a>
-              </span>
-              <h1 class="ml9">
-                <span class="text-wrapper">
-                  <span class="letters">Simranjeet</span>
-                </span>
-                <span class="text-wrapper">
-                  <span class="letters2">Singh</span>
-                </span>
-              </h1>
-            </div>
-          </div>
-        </div>
-        <div
-          class="container center-vertically-holder"
-          style="padding-top: 70px; padding-bottom: 60px;"
+        <a href="https://github.com/smrnjeet222" class="link"
+          ><i class="image fas fa-user fa-2x"></i>
+          <div class="overlay">
+            <div class="text">ABOUT</div>
+          </div></a
         >
-          <div class="row" id="reld">
-            <!--Github-->
-            <div class="col-lg-3 col-xs-6 col-sm-6 col-md-6">
-              <a
-                href="https://github.com/smrnjeet222"
-                title="Github"
-                style="text-decoration: none;"
-              >
-                <div class="col-center-block item">
-                  <div class="circle-hold">
-                    <i class="fab fa-github"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!--LinkedIn-->
-            <div class="col-lg-3 col-xs-6 col-sm-6 col-md-6">
-              <a
-                href="https://www.linkedin.com/in/smrnjeet222/"
-                title="LinkedIn"
-                style="text-decoration: none;"
-              >
-                <div class="col-center-block item">
-                  <div class="circle-hold">
-                    <i class="fab fa-linkedin"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!--HAckerRank-->
-            <div class="col-lg-3 col-xs-6 col-sm-6 col-md-6">
-              <a
-                href="https://www.hackerrank.com/smrnjeet222"
-                title="HackerRank"
-                style="text-decoration: none;"
-              >
-                <div class="col-center-block item">
-                  <div class="circle-hold">
-                    <i class="fab fa-hackerrank"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!--Resume-->
-            <div class="col-lg-3 col-xs-6 col-sm-6 col-md-6">
-              <a
-                href="./Resume.html"
-                title="Resume"
-                style="text-decoration: none;"
-              >
-                <div class="col-center-block item">
-                  <div class="circle-hold">
-                    <i class="fas fa-file-alt"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!--itch.io-->
-            <div class="col-lg-3 col-xs-6 col-sm-6 col-md-6">
-              <a
-                href="https://smrnjeet-22.itch.io/"
-                title="Games/Art"
-                style="text-decoration: none;"
-              >
-                <div class="col-center-block item">
-                  <div class="circle-hold">
-                    <i class="fab fa-itch-io"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!--Instagram-->
-            <div class="col-lg-3 col-xs-6 col-sm-6 col-md-6">
-              <a
-                href="https://www.instagram.com/smrnjeet_22/"
-                title="Instagram"
-                style="text-decoration: none;"
-              >
-                <div class="col-center-block item">
-                  <div class="circle-hold">
-                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!--LeetCode-->
-            <div class="col-lg-3 col-xs-6 col-sm-6 col-md-6">
-              <a
-                href="https://leetcode.com/smrnjeet222/"
-                title="LeetCode"
-                style="text-decoration: none;"
-              >
-                <div class="col-center-block item">
-                  <div class="circle-hold">
-                    <!-- 									<i class="cib-leetcode"></i> -->
-                    <i class="fa fa-code"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!--Projects-->
-            <div class="col-lg-3 col-xs-6 col-sm-6 col-md-6">
-              <a
-                href="https://smrnjeet222.github.io/Projects/"
-                title="Projects"
-                style="text-decoration: none;"
-              >
-                <div class="col-center-block item">
-                  <div class="circle-hold">
-                    <i class="far fa-lightbulb"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
+        <a href="https://github.com/smrnjeet222#" class="link"
+          ><i class="fas fa-cogs fa-2x"></i>
+          <div class="overlay">
+            <div class="text">SKILLS</div>
+          </div></a
+        >
+        <a href="https://github.com/smrnjeet222" class="link"
+          ><i class="fas fa-eye fa-2x"></i>
+          <div class="overlay">
+            <div class="text">MY WORK</div>
+          </div></a
+        >
+        <a href="/contact.html" class="link"
+          ><i class="fas fa-envelope fa-2x"></i>
+          <div class="overlay">
+            <div class="text">CONTACT</div>
+          </div></a
+        >
+      </nav>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/smrnjeet_22/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Att_Sardar_ji" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/smrnjeet222" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <a class="bkmrk" href="https://smrnjeet222.github.io/Resume.html">
+      <img src="svgs/blogdark.png" alt="Resume" />
+      <span class="folded-corner"></span>
+    </a>
+    <div class="container home-page">
+      <span class="tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
+      <div class="text-zone">
+        <h1 aria-label=" Hi, I’m Simranjeet,web developer." class="blast-root">
+          <span class="blast" style="opacity: 1;">H</span
+          ><span class="blast" style="opacity: 1;">i</span
+          ><span class="blast" style="opacity: 1;">,</span><br />
+          <span class="blast" style="opacity: 1;">I</span
+          ><span class="blast" style="opacity: 1;">’</span
+          ><span class="blast" style="opacity: 1;">m</span>
+          <span class="Slast" style="opacity: 1;">S</span
+          ><span class="blast" style="opacity: 1;">i</span
+          ><span class="blast" style="opacity: 1;">m</span
+          ><span class="blast" style="opacity: 1;">r</span
+          ><span class="blast" style="opacity: 1;">a</span
+          ><span class="blast" style="opacity: 1;">n</span
+          ><span class="blast" style="opacity: 1; padding-left: 3px;">j</span
+          ><span class="blast" style="opacity: 1;">e</span
+          ><span class="blast" style="opacity: 1;">e</span
+          ><span class="blast" style="opacity: 1;">t</span
+          ><span class="blast" style="opacity: 1;">,</span><br />
+          <span class="blast" style="opacity: 1;">w</span
+          ><span class="blast" style="opacity: 1;">e</span
+          ><span class="blast" style="opacity: 1;">b</span>
+          <span class="blast" style="opacity: 1;">d</span
+          ><span class="blast" style="opacity: 1;">e</span
+          ><span class="blast" style="opacity: 1;">v</span
+          ><span class="blast" style="opacity: 1;">e</span
+          ><span class="blast" style="opacity: 1;">l</span
+          ><span class="blast" style="opacity: 1;">o</span
+          ><span class="blast" style="opacity: 1;">p</span
+          ><span class="blast" style="opacity: 1;">e</span
+          ><span class="blast" style="opacity: 1;">r</span
+          ><span class="blast" style="opacity: 1;">.</span>
+        </h1>
+        <h2>Full Stack Developer / Python Programmer / Freelancer</h2>
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/smrnjeet222/">
+            <i class="fab fa-linkedin fa-3x"></i>
+          </a>
+          <a href="https://github.com/smrnjeet222">
+            <i class="fab fa-github fa-3x"></i>
+          </a>
+          <a href="https://leetcode.com/smrnjeet222/">
+            <i class="fa fa-code fa-3x"></i>
+          </a>
+          <a href="https://smrnjeet-22.itch.io/">
+            <i class="fab fa-itch-io fa-3x"></i>
+          </a>
         </div>
       </div>
+
+      <span class="tags bottom-tags">
+        &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br />
+        &lt;/html&gt;
+      </span>
     </div>
-    <footer id="main-footer">
-      <p>Copyright &copy; 2020 by Smrnjeet</p>
-    </footer>
+    <script>
+      if (window.matchMedia("(min-width: 800px)").matches) {
+        function getRandomInt(min, max) {
+          min = Math.ceil(min);
+          max = Math.floor(max);
+          return Math.floor(Math.random() * (max - min)) + min; // The maximum is exclusive and the minimum is inclusive
+        }
+        document.write(
+          '<div id="mysvg"><img alt="hacker" src="svgs/code' +
+            getRandomInt(1, 8) +
+            '.svg"></div>'
+        );
+      }
+    </script>
 
-    <button class="button" id="theme-toggle">
-      <span>Switch to light mode</span>
-    </button>
-
-    <!-- scripts -->
-    <script src="js/backHover.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/loader.js"></script>
-    <script src="js/themeToogle.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(".blast").mouseover(function () {
+        $(this).addClass("animated rubberBand");
+      });
+      $(".blast").mouseleave(function () {
+        var th = $(this);
+        setTimeout(function () {
+          th.removeClass("animated rubberBand");
+        }, 1000);
+      });
+    </script>
   </body>
 </html>
