@@ -26,25 +26,25 @@
             <div class="text">HOME</div>
           </div></a
         >
-        <a href="https://github.com/smrnjeet222" class="link"
+        <a href="/about.html" class="link"
           ><i class="image fas fa-user fa-2x"></i>
           <div class="overlay">
             <div class="text">ABOUT</div>
           </div></a
         >
-        <a href="https://github.com/smrnjeet222" class="link"
+        <a href="/skills.html" class="link"
           ><i class="fas fa-cogs fa-2x"></i>
           <div class="overlay">
             <div class="text">SKILLS</div>
           </div></a
         >
-        <a href="https://github.com/smrnjeet222" class="link"
+        <a href="/work.html" class="link"
           ><i class="fas fa-eye fa-2x"></i>
           <div class="overlay">
             <div class="text">MY WORK</div>
           </div></a
         >
-        <a href="/contact.html" class="link"
+        <a href="/contact.html" class="link active-nav"
           ><i class="fas fa-envelope fa-2x"></i>
           <div class="overlay">
             <div class="text">CONTACT</div>
@@ -84,7 +84,7 @@
           ><span class="blast" style="opacity: 1; color: #23ffde;">a</span
           ><span class="blast" style="opacity: 1; color: #23ffde;">c</span
           ><span class="blast" style="opacity: 1; color: #23ffde;">t</span>
-          <span class="blast" style="opacity: 1; color: #23ffde;">M</span
+          <span class="blast" style="opacity: 1; color: #23ffde;">m</span
           ><span class="blast" style="opacity: 1; color: #23ffde;">e</span>
         </h1>
         <p
@@ -123,18 +123,19 @@
               id="name"
               type="text"
               name="entry.649112156"
-              placeholder="Name"
+              placeholder="Name *"
               onfocus="this.placeholder=''"
-              onblur="this.placeholder='Name'"
+              onblur="this.placeholder='Name *'"
+              required="true"
             />
 
             <input
               id="email"
               type="email"
               name="entry.1560288382"
-              placeholder="Email"
+              placeholder="Email *"
               onfocus="this.placeholder=''"
-              onblur="this.placeholder='Email'"
+              onblur="this.placeholder='Email *'"
               required="true"
             /><br />
 
@@ -142,7 +143,7 @@
               id="sbj"
               type="text"
               name="entry.1406382583"
-              placeholder="Subject"
+              placeholder="Subject (optional)"
               onfocus="this.placeholder=''"
               onblur="this.placeholder='Subject'"
             /><br />
@@ -151,15 +152,32 @@
               id="msg"
               type="text"
               name="entry.728219473"
-              placeholder="Message"
+              placeholder="Message *"
               onfocus="this.placeholder=''"
-              onblur="this.placeholder='Message'"
+              onblur="this.placeholder='Message *'"
+              required="true"
               cols="50"
               rows="10"
             ></textarea
             ><br />
             <input id="sub-btn" type="submit" value="Send" />
           </form>
+          <p
+            style="
+              color: aliceblue;
+              width: 50%;
+              font-size: 1em;
+              transform: translateY(-4vh);
+            "
+          >
+            Or you can just mail me at ~
+            <a
+              href="mailto:smrnjeet222@gmail.com"
+              style="color: #23ffde; font-size: 1.3em;"
+            >
+              smrnjeet222@gmail.com</a
+            >
+          </p>
         </div>
       </div>
 
@@ -168,20 +186,20 @@
         &lt;/html&gt;
       </span>
     </div>
-    <script>
-      if (window.matchMedia("(min-width: 800px)").matches) {
-        function getRandomInt(min, max) {
-          min = Math.ceil(min);
-          max = Math.floor(max);
-          return Math.floor(Math.random() * (max - min)) + min; // The maximum is exclusive and the minimum is inclusive
-        }
-        document.write(
-          '<div id="mysvg"><img alt="hacker" src="svgs/code' +
-            getRandomInt(1, 8) +
-            '.svg"></div>'
-        );
-      }
-    </script>
+
+    <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe
+          id="gmap_canvas"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d633470.5169291274!2d76.89342349926463!3d28.705698137363992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d013a47a1803d%3A0xedfb8cc477815e2f!2sRohini%2C%20New%20Delhi%2C%20Delhi%2C%20India!5e0!3m2!1sen!2sus!4v1597408824240!5m2!1sen!2sus"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          allowfullscreen=""
+          scrolling="no"
+        ></iframe>
+      </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
