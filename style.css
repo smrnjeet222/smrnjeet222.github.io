@@ -335,6 +335,12 @@ h1 {
   border-color: #fff #fff transparent transparent;
   transition: border-width 0.2s ease-out;
 }
+.text-zone p {
+  color: aliceblue;
+  width: 80%;
+  font-size: 1rem;
+  margin: 2rem 0;
+}
 
 @keyframes myanim2 {
   0% {
@@ -624,13 +630,30 @@ textarea {
   #name,
   #email,
   #sbj {
-    height: 5vh;
+    font-size: 14px;
+    height: 4vh;
   }
   #msg {
-    height: 20vh;
+    font-size: 16px;
+    height: 15vh;
   }
 
   #sub-btn {
     margin-left: 60vw;
+  }
+}
+
+@media screen and (max-height: 568px) {
+  .text-zone p {
+    font-size: 13px;
+  }
+  .tags {
+    display: none;
+  }
+  .text-zone {
+    padding-right: 10%;
+  }
+  .text-zone h1:after {
+    padding-right: 5%;
   }
 }

@@ -406,12 +406,3 @@ h1 {
     width: 200px;
   }
 }
-
-@keyframes myanim2 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
