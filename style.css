@@ -284,23 +284,7 @@ h1 {
   -webkit-animation: myanim2 1s 0.8s backwards;
   animation: myanim2 1s 0.8s backwards;
 }
-.flat-button {
-  color: #08fdd8;
-  font-size: 13px;
-  letter-spacing: 4px;
-  font-family: "Open Sans", sans-serif;
-  text-decoration: none;
-  padding: 10px 18px;
-  border: 1px solid #08fdd8;
-  margin-top: 25px;
-  float: left;
-  -webkit-animation: myanim2 1s 0.8s backwards;
-  animation: myanim2 1s 0.8s backwards;
-}
 
-.flat-button {
-  white-space: nowrap;
-}
 .blast {
   display: inline-block;
 }
@@ -546,7 +530,7 @@ textarea {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .mapouter {
     display: none;
   }
@@ -558,22 +542,23 @@ textarea {
     display: none;
   }
   #nav-bar {
-    max-height: 60px;
+    display: flex;
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 50px;
     min-height: 0px;
     background: #181818;
     width: 100%;
     position: fixed;
-    display: flex;
-    justify-self: start;
-    flex-direction: row;
-    justify-content: space-between;
   }
   #nav-bar nav {
     display: flex;
-    margin-left: 6vw;
+    margin: auto;
   }
   #nav-bar nav a {
-    padding: 2em 1.5em;
+    padding: 1em 1.5em;
     color: #909096;
   }
   #nav-bar ul li,
