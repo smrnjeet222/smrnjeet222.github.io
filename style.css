@@ -567,9 +567,14 @@ textarea {
   .link {
     display: none;
   }
-  .home-page h1:before {
-    margin-top: -15px;
+  .container {
+    top: 0;
+    height: 96vh;
   }
+  .home-page h1:before {
+    margin-top: -30px;
+  }
+
   .home-page .text-zone {
     width: 90%;
   }
