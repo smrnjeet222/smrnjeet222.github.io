@@ -245,7 +245,7 @@ h1 {
 
 @font-face {
   font-family: myFirstFont;
-  src: url(fonts/download.ttf);
+  src: url(../fonts/download.ttf);
 }
 
 .home-page h1 {
