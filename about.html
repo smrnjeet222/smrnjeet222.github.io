@@ -132,17 +132,6 @@
         );
       }
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>
-      $(".blast").mouseover(function () {
-        $(this).addClass("animated rubberBand");
-      });
-      $(".blast").mouseleave(function () {
-        var th = $(this);
-        setTimeout(function () {
-          th.removeClass("animated rubberBand");
-        }, 1000);
-      });
-    </script>
+    <script src="bounce.js"></script>
   </body>
 </html>
