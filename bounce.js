@@ -1,5 +1,4 @@
 const cls = document.querySelectorAll(".blast");
-console.log(cls);
 
 cls.forEach((cl) => {
   cl.addEventListener("mouseover", function () {
