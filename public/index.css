@@ -27,8 +27,14 @@ body {
   color: #444;
   margin: 0;
   background: #1d1d1d;
-  overflow: hidden;
+  overflow-x: hidden;
   display: block;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 body.no-overflow {
@@ -61,6 +67,7 @@ body.no-overflow {
 #nav-bar nav {
   display: block;
   text-align: center;
+  margin-top: auto;
 }
 
 #nav-bar nav a {
@@ -82,6 +89,7 @@ body.no-overflow {
   list-style: none;
   text-align: center;
   margin: 0;
+  margin-top: auto;
   padding-bottom: 25px;
 }
 
@@ -288,6 +296,7 @@ h1 {
 .blast {
   display: inline-block;
 }
+
 .home-page .flat-button:hover {
   background: #08fdd8;
   color: #333;
@@ -511,7 +520,11 @@ textarea {
 
 /* _________________________________RESPONSIVE___________________________________________ */
 
-@media (max-width: 1100px) {
+@media (max-width: 1100px) and (min-width: 600px) {
+  .home-page .text-zone {
+    width: 70vw;
+    margin-left: 10%;
+  }
   .mapouter {
     display: none;
   }
@@ -522,21 +535,15 @@ textarea {
   #email {
     width: 35.2rem;
   }
-}
-
-@media (min-width: 600px) and (max-width: 768px) {
-  .home-page .text-zone {
-    width: 90%;
-  }
-  .home-page .text-zone {
-    left: 22%;
-  }
-  .mapouter {
+  #mysvg {
     display: none;
   }
 }
 
 @media (max-width: 767px) {
+  #mysvg {
+    display: none;
+  }
   .mapouter {
     display: none;
   }
@@ -553,6 +560,7 @@ textarea {
     bottom: 0;
     flex-direction: row;
     justify-content: space-between;
+    flex-grow: 1;
     max-height: 50px;
     min-height: 0px;
     background: #181818;
@@ -578,6 +586,9 @@ textarea {
   }
   .home-page h1:before {
     margin-top: -30px;
+  }
+  .text-zone h2 {
+    width: 80vw;
   }
 
   .home-page .text-zone {

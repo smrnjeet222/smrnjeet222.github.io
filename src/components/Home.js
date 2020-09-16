@@ -28,10 +28,7 @@ export default function Home() {
               ’
             </span>
             <span className="blast" style={{ opacity: 1 }}>
-              m
-            </span>
-            <span className="Slast" style={{ opacity: 1 }}>
-              {" "}
+              m&nbsp;
             </span>
             <span className="Slast" style={{ opacity: 1 }}>
               S
@@ -74,10 +71,7 @@ export default function Home() {
               e
             </span>
             <span className="blast" style={{ opacity: 1 }}>
-              b
-            </span>
-            <span className="Slast" style={{ opacity: 1 }}>
-              {" "}
+              b&nbsp;
             </span>
             <span className="blast" style={{ opacity: 1 }}>
               d
