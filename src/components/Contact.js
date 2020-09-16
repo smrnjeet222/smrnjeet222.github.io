@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from "react";
 
 export default function Contact() {
   return (
@@ -6,39 +6,45 @@ export default function Contact() {
       <div className="container home-page">
         <span className="tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
         <div className="text-zone">
-          <h1 aria-label=" Hi, I’m Simranjeet,web developer." className="blast-root">
-            <span className="blast" style="opacity: 1; color: #23ffde;">C</span
-            ><span className="blast" style="opacity: 1; color: #23ffde;">o</span
-            ><span className="blast" style="opacity: 1; color: #23ffde;">n</span
-            ><span className="blast" style="opacity: 1; color: #23ffde;">t</span
-            ><span className="blast" style="opacity: 1; color: #23ffde;">a</span
-            ><span className="blast" style="opacity: 1; color: #23ffde;">c</span
-            ><span className="blast" style="opacity: 1; color: #23ffde;">t</span>
-            <span className="blast" style="opacity: 1; color: #23ffde;">m</span
-            ><span className="blast" style="opacity: 1; color: #23ffde;">e</span>
+          <h1
+            aria-label=" Hi, I’m Simranjeet,web developer."
+            className="blast-root"
+          >
+            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+              C
+            </span>
+            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+              o
+            </span>
+            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+              n
+            </span>
+            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+              t
+            </span>
+            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+              a
+            </span>
+            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+              c
+            </span>
+            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+              t&nbsp;
+            </span>
+            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+              m
+            </span>
+            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+              e
+            </span>
           </h1>
           <p>
             I am interested in freelance opportunities – especially ambitious or
-            large projects. However, if you have other request or question, don’t
-            hesitate to contact me using below form either.
+            large projects. However, if you have other request or question,
+            don’t hesitate to contact me using below form either.
           </p>
 
           <div className="contact">
-            <script type="text/javascript">
-              var submitted = false;
-            </script>
-            <script>
-              function doIt() {
-                alert("Your Message is sent!");
-                __doPostBack("ctl00$ctl00$bLogout", "");
-              }
-            </script>
-            <iframe
-              name="hidden_iframe"
-              id="hidden_iframe"
-              style="display: none;"
-              onload="if(submitted)  {doIt();}"
-            ></iframe>
             <form
               className="form"
               action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfw-BZLTTNI3Y9D9LbCBb5b56lpbOokb2P1win1ky8SP5lt8A/formResponse"
@@ -56,7 +62,7 @@ export default function Contact() {
                 onblur="this.placeholder='Name *'"
                 required="true"
               />
-
+              &nbsp;
               <input
                 id="email"
                 type="email"
@@ -65,8 +71,8 @@ export default function Contact() {
                 onfocus="this.placeholder=''"
                 onblur="this.placeholder='Email *'"
                 required="true"
-              /><br />
-
+              />
+              <br />
               <input
                 id="sbj"
                 type="text"
@@ -74,8 +80,8 @@ export default function Contact() {
                 placeholder="Subject (optional)"
                 onfocus="this.placeholder=''"
                 onblur="this.placeholder='Subject'"
-              /><br />
-
+              />
+              <br />
               <textarea
                 id="msg"
                 type="text"
@@ -86,36 +92,37 @@ export default function Contact() {
                 required="true"
                 cols="50"
                 rows="10"
-              ></textarea
-              ><br />
+              ></textarea>
+              <br />
               <input id="sub-btn" type="submit" value="Send" />
             </form>
             <p
-              style="
-                color: aliceblue;
-                width: 50%;
-                font-size: 1em;
-                margin: 1% 0;
-                transform: translateY(-40px);
-              "
+              style={{
+                color: "aliceblue",
+                maxWidth: "60%",
+                fontSize: "1em",
+                margin: "5px 0 5px 2px",
+                transform: "translateY(-40px)",
+              }}
             >
-              Or you can just mail me at ~
+              Or you can just mail me at ~&nbsp;
               <a
                 href="mailto:smrnjeet222@gmail.com"
-                style="color: #23ffde; font-size: 1.3em;"
+                style={{ color: "#23ffde", fontSize: "1.3em" }}
               >
-                smrnjeet222@gmail.com</a
-              >
+                smrnjeet222@gmail.com
+              </a>
             </p>
           </div>
         </div>
 
         <span className="tags bottom-tags">
-          &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt;/body&gt;
+          <br />
           &lt;/html&gt;
         </span>
       </div>
-      
+
       <div className="mapouter">
         <div className="gmap_canvas">
           <iframe

@@ -212,14 +212,15 @@ h1 {
 }
 
 .container {
-  width: 100%;
+  position: absolute;
+  width: 100vw;
+  top: 0;
   height: 90%;
   position: absolute;
   opacity: 1;
   top: 5%;
-  left: 1%;
   margin: 0 auto;
-  z-index: 1;
+  z-index: -10;
 }
 
 .text-zone span {
@@ -448,6 +449,10 @@ h1 {
   animation-fill-mode: both;
 }
 /* ______________________________CONTACT____________________________ */
+.contact {
+  max-width: 35.5rem;
+  margin-bottom: -40px;
+}
 textarea {
   resize: none;
 }
@@ -479,6 +484,7 @@ textarea {
   color: whitesmoke;
   border: none;
   outline: none;
+  font-family: inherit;
 }
 
 #name:focus,
@@ -491,6 +497,7 @@ textarea {
 #sub-btn {
   padding: 0.5em 1em;
   font-size: 1rem;
+  right: 0;
   margin-left: 30.7rem;
   background-color: transparent;
   border: #23ffde 1px solid;
@@ -504,6 +511,7 @@ textarea {
 
 .mapouter {
   position: absolute;
+  margin: 0;
   z-index: 50;
   right: 0;
   height: 100vh;
@@ -520,7 +528,7 @@ textarea {
 
 /* _________________________________RESPONSIVE___________________________________________ */
 
-@media (max-width: 1100px) and (min-width: 600px) {
+@media (max-width: 1100px) and (min-width: 767px) {
   .home-page .text-zone {
     width: 70vw;
     margin-left: 10%;
@@ -545,6 +553,9 @@ textarea {
     display: none;
   }
   .mapouter {
+    display: none;
+  }
+  .gmap_canvas {
     display: none;
   }
   .link,
@@ -580,9 +591,6 @@ textarea {
   .text,
   .link {
     display: none;
-  }
-  .container {
-    top: 0;
   }
   .home-page h1:before {
     margin-top: -30px;
