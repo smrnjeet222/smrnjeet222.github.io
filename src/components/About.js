@@ -35,7 +35,7 @@ export default function About() {
           </h1>
           <p align="LEFT">
             A skilled and knowledgeable computer science student with extensive
-            knowledge of <strong>programming</strong> and
+            knowledge of <strong>programming</strong> and&nbsp;
             <strong>computer applications</strong> . 👨‍💻
             <br />
             <br />

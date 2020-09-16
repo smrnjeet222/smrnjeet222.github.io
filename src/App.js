@@ -29,10 +29,10 @@ export default function App() {
     <>
       <Nav />
       <Home />
-      {/* <About />
-      <Skills />
-      <Work />
-      <Contact /> */}
+      {/* <About /> */}
+      {/* <Skills /> */}
+      {/* <Work /> */}
+      {/* <Contact /> */}
     </>
   );
 }
