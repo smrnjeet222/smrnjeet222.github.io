@@ -28,11 +28,11 @@ export default function App() {
   return (
     <>
       <Nav />
-      {/* <Home /> */}
-      {/* <About /> */}
-      {/* <Skills /> */}
-      {/* <Work /> */}
-      <Contact />
+      <Home />
+      {/* <About />
+      <Skills />
+      <Work />
+      <Contact /> */}
     </>
   );
 }
