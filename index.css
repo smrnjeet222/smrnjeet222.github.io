@@ -551,7 +551,8 @@ textarea {
     display: none;
   }
   .container {
-    top: 0%;
+    top: 1%;
+    height: 90%;
   }
   .mapouter {
     display: none;
@@ -561,7 +562,7 @@ textarea {
   }
   .link,
   i {
-    max-height: 60px;
+    max-height: 70px;
   }
   #nav-bar a {
     display: none;
@@ -573,7 +574,7 @@ textarea {
     flex-direction: row;
     justify-content: space-between;
     flex-grow: 1;
-    max-height: 50px;
+    max-height: 70px;
     min-height: 0px;
     background: #181818;
     width: 100%;
