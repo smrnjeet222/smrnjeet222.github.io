@@ -1,10 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Contact() {
   function handleSubmit(e) {
-    e.preventDefault();
     alert("Your Message is sent!");
-    // console.log("Submitted");
   }
 
   return (
@@ -51,6 +49,13 @@ export default function Contact() {
           </p>
 
           <div className="contact">
+            <iframe
+              name="hidden_iframe"
+              id="hidden_iframe"
+              style={{
+                display: "none",
+              }}
+            ></iframe>
             <form
               className="form"
               action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfw-BZLTTNI3Y9D9LbCBb5b56lpbOokb2P1win1ky8SP5lt8A/formResponse"
