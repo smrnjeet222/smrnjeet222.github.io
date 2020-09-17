@@ -11,32 +11,33 @@ export default function Nav() {
             alt="logo"
           />
         </a>
+
         <nav>
-          <a href="/" className="link active-nav">
+          <a href="/" className="link ">
             <i className="fas fa-home fa-2x"></i>
             <div className="overlay">
               <div className="text">HOME</div>
             </div>
           </a>
-          <a href="/about.html" className="link">
+          <a href="/about" className="link">
             <i className="image fas fa-user fa-2x"></i>
             <div className="overlay">
               <div className="text">ABOUT</div>
             </div>
           </a>
-          <a href="/skills.html" className="link">
+          <a href="/skills" className="link">
             <i className="fas fa-cogs fa-2x"></i>
             <div className="overlay">
               <div className="text">SKILLS</div>
             </div>
           </a>
-          <a href="/work.html" className="link">
+          <a href="/work" className="link">
             <i className="fas fa-eye fa-2x"></i>
             <div className="overlay">
               <div className="text">MY WORK</div>
             </div>
           </a>
-          <a href="/contact.html" className="link">
+          <a href="/contact" className="link">
             <i className="fas fa-envelope fa-2x"></i>
             <div className="overlay">
               <div className="text">CONTACT</div>

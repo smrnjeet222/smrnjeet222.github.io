@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -25,13 +27,15 @@ export default function App() {
   }, []);
 
   return (
-    <>
+    <Router>
       <Nav />
-      <Home />
-      {/* <About /> */}
-      {/* <Skills /> */}
-      {/* <Work /> */}
-      {/* <Contact /> */}
-    </>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" exact component={About} />
+        <Route path="/skills" exact component={Skills} />
+        <Route path="/work" exact component={Work} />
+        <Route path="/contact" exact component={Contact} />
+      </Switch>
+    </Router>
   );
 }

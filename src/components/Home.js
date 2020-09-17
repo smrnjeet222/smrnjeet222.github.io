@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import randomsvg from "../script/randomsvg";
 
 export default function Home() {
+  useEffect(() => {
+    const links = document.querySelectorAll(".link");
+    links.forEach((al) => {
+      al.classList.remove("active-nav");
+    });
+    links[0].classList.add("active-nav");
+  }, []);
   return (
     <>
       <div className="container home-page">

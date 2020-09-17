@@ -1,6 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 
 export default function Contact() {
+  useEffect(() => {
+    const links = document.querySelectorAll(".link");
+    links.forEach((al) => {
+      al.classList.remove("active-nav");
+    });
+    links[4].classList.add("active-nav");
+  }, []);
+
   function handleSubmit(e) {
     alert("Your Message is sent!");
   }
@@ -51,6 +59,7 @@ export default function Contact() {
           <div className="contact">
             <iframe
               name="hidden_iframe"
+              title="hidden_iframe"
               id="hidden_iframe"
               style={{
                 display: "none",

@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../work.css";
 
 export default function Work() {
+  useEffect(() => {
+    const links = document.querySelectorAll(".link");
+    links.forEach((al) => {
+      al.classList.remove("active-nav");
+    });
+    links[3].classList.add("active-nav");
+  }, []);
   return (
     <div className="gal-container">
       {/* <h1 style={{ textAlign: "center", margin: "1rem", color: "#23ffde" }}>
