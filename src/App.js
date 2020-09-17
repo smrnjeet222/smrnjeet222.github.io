@@ -9,32 +9,25 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 
 export default function App() {
-  useEffect(() => {
-    const cls = document.querySelectorAll(".blast");
-    cls.forEach((cl) => {
-      cl.addEventListener("mouseover", function () {
-        cl.classList.add("animated");
-        cl.classList.add("rubberBand");
-      });
-
-      cl.addEventListener("mouseleave", function () {
-        setTimeout(function () {
-          cl.classList.remove("animated");
-          cl.classList.remove("rubberBand");
-        }, 1000);
-      });
-    });
-  }, []);
-
   return (
     <Router>
       <Nav />
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" exact component={About} />
-        <Route path="/skills" exact component={Skills} />
-        <Route path="/work" exact component={Work} />
-        <Route path="/contact" exact component={Contact} />
+        <Route path={process.env.PUBLIC_URL + "/"} exact>
+          <Home />
+        </Route>
+        <Route path={process.env.PUBLIC_URL + "/about"} exact>
+          <About />
+        </Route>
+        <Route path={process.env.PUBLIC_URL + "/skills"} exact>
+          <Skills />
+        </Route>
+        <Route path={process.env.PUBLIC_URL + "/work"} exact>
+          <Work />
+        </Route>
+        <Route path={process.env.PUBLIC_URL + "/contact"} exact>
+          <Contact />
+        </Route>
       </Switch>
     </Router>
   );

@@ -114,6 +114,7 @@ button:focus {
 .box:hover .show2 {
   opacity: 1;
 }
+
 @media screen and (min-width: 767px) and (max-width: 1024px) {
   .gallery {
     -webkit-column-count: 3;
@@ -134,6 +135,9 @@ button:focus {
 }
 
 @media screen and (max-width: 767px) {
+  .gal-container {
+    padding-left: 0px;
+  }
   .gallery {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -168,8 +172,8 @@ button:focus {
     left: 18%;
     bottom: 5%;
   }
-  .link,
-  i {
+  .gal-container .link,
+  .gal-container i {
     max-height: 60px;
   }
 }

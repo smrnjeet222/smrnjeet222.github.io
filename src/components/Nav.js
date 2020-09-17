@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
@@ -13,36 +14,36 @@ export default function Nav() {
         </a>
 
         <nav>
-          <a href="/" className="link ">
+          <Link to={process.env.PUBLIC_URL + "/"} className="link ">
             <i className="fas fa-home fa-2x"></i>
             <div className="overlay">
               <div className="text">HOME</div>
             </div>
-          </a>
-          <a href="/about" className="link">
+          </Link>
+          <Link to={process.env.PUBLIC_URL + "/about"} className="link">
             <i className="image fas fa-user fa-2x"></i>
             <div className="overlay">
               <div className="text">ABOUT</div>
             </div>
-          </a>
-          <a href="/skills" className="link">
+          </Link>
+          <Link to={process.env.PUBLIC_URL + "/skills"} className="link">
             <i className="fas fa-cogs fa-2x"></i>
             <div className="overlay">
               <div className="text">SKILLS</div>
             </div>
-          </a>
-          <a href="/work" className="link">
+          </Link>
+          <Link to={process.env.PUBLIC_URL + "/work"} className="link">
             <i className="fas fa-eye fa-2x"></i>
             <div className="overlay">
               <div className="text">MY WORK</div>
             </div>
-          </a>
-          <a href="/contact" className="link">
+          </Link>
+          <Link to={process.env.PUBLIC_URL + "/contact"} className="link">
             <i className="fas fa-envelope fa-2x"></i>
             <div className="overlay">
               <div className="text">CONTACT</div>
             </div>
-          </a>
+          </Link>
         </nav>
         <ul>
           <li>

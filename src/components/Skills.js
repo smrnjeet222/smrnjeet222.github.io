@@ -1,8 +1,23 @@
 import React, { useEffect } from "react";
-import randomsvg from "../script/randomsvg";
+import getRandomInt from "../script/randomsvg";
 
 export default function Skills() {
   useEffect(() => {
+    const cls = document.querySelectorAll(".blast");
+    cls.forEach((cl) => {
+      cl.addEventListener("mouseover", function () {
+        cl.classList.add("animated");
+        cl.classList.add("rubberBand");
+      });
+
+      cl.addEventListener("mouseleave", function () {
+        setTimeout(function () {
+          cl.classList.remove("animated");
+          cl.classList.remove("rubberBand");
+        }, 1000);
+      });
+    });
+
     const links = document.querySelectorAll(".link");
     links.forEach((al) => {
       al.classList.remove("active-nav");
@@ -24,11 +39,8 @@ export default function Skills() {
             <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
               &&nbsp;
             </span>
-            <span
-              className="blast lnbr"
-              style={{ opacity: 1, color: "#23ffde" }}
-            >
-              Experience&nbsp;
+            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+              Experience
             </span>
           </h1>
           <p align="LEFT">
@@ -68,7 +80,12 @@ export default function Skills() {
           &lt;/html&gt;
         </span>
       </div>
-      {randomsvg()}
+      <div id="mysvg">
+        <img
+          alt="hacker"
+          src={`https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/code${getRandomInt()}.svg`}
+        />
+      </div>
     </>
   );
 }
