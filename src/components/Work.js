@@ -1,6 +1,24 @@
 import React, { useEffect } from "react";
 import "../work.css";
 
+function Post({ img, name, ext, git, live }) {
+  return (
+    <div className="box">
+      <img alt="projimg" src={img} className="image" />
+      <button className="prj">
+        {name}
+        <span> . {ext}</span>
+      </button>
+      <a href={git} className="show1">
+        Github
+      </a>
+      <a href={live} className="show2">
+        Visit
+      </a>
+    </div>
+  );
+}
+
 export default function Work() {
   useEffect(() => {
     const links = document.querySelectorAll(".link");
@@ -15,341 +33,125 @@ export default function Work() {
         My Projects
       </h1> */}
       <div className="gallery">
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/recipe.jpg"
-            className="image"
-          />
-          <button className="prj">
-            Recipe App<span> . js</span>
-          </button>
-          <a href="https://github.com/smrnjeet222/recipe-app" className="show1">
-            Github
-          </a>
-          <a href="https://smrnjeet222.github.io/recipe-app/" className="show2">
-            Visit
-          </a>
-        </div>
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/pg.png"
-            className="image"
-          />
-          <button className="prj">
-            Pico-Gram<span> . js</span>
-          </button>
-          <a href="https://github.com/smrnjeet222/PicoGram" className="show1">
-            Github
-          </a>
-          <a href="https://smrnjeet-picogram.web.app/" className="show2">
-            Visit
-          </a>
-        </div>
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/blog.jpg"
-            className="image"
-          />
-          <button className="prj">
-            Django Blog<span> . py</span>
-          </button>
-          <a
-            href="https://github.com/smrnjeet222/Django_Blog"
-            className="show1"
-          >
-            Github
-          </a>
-          <a href="https://smrnjeetblogs.herokuapp.com/" className="show2">
-            Visit
-          </a>
-        </div>
-
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/portfolio.png"
-            className="image"
-          />
-          <button className="prj">
-            Old Portfolio<span> . js</span>
-          </button>
-          <a href="https://github.com/smrnjeet222/Portfolio" className="show1">
-            Github
-          </a>
-          <a href="https://smrnjeet222.github.io/Portfolio/" className="show2">
-            Visit
-          </a>
-        </div>
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/Snake/Extras/play.png"
-            className="image"
-          />
-          <button className="prj">
-            Snake Game<span> . py</span>
-          </button>
-          <a
-            href="https://github.com/smrnjeet222/Python_Apps/tree/master/Snake"
-            className="show1"
-          >
-            Github
-          </a>
-          <a
-            href="https://github.com/smrnjeet222/Python_Apps/tree/master/Snake"
-            className="show2"
-          >
-            Visit
-          </a>
-        </div>
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Automail.png"
-            className="image"
-          />
-          <button className="prj">
-            AutoMail<span> . py</span>
-          </button>
-          <a href="https://github.com/smrnjeet222/AutoMail" className="show1">
-            Github
-          </a>
-          <a href="https://github.com/smrnjeet222/AutoMail" className="show2">
-            Visit
-          </a>
-        </div>
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/Unity_Gamedevelopment/master/FreakyFrog/best.png"
-            className="image"
-          />
-          <button className="prj">
-            Freaky Frog<span> . C#</span>
-          </button>
-          <a
-            href="https://smrnjeet222.github.io/Unity_Gamedevelopment/"
-            className="show1"
-          >
-            Github
-          </a>
-          <a href="https://smrnjeet-22.itch.io/freaky-frog" className="show2">
-            Visit
-          </a>
-        </div>
-
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/SudokuSolver/2.png"
-            className="image"
-          />
-          <button className="prj">
-            Sudoku Solver<span> . py</span>
-          </button>
-          <a
-            href="https://github.com/smrnjeet222/Python_Apps/tree/master/SudokuSolver"
-            className="show1"
-          >
-            Github
-          </a>
-          <a
-            href="https://github.com/smrnjeet222/Python_Apps/tree/master/SudokuSolver"
-            className="show2"
-          >
-            Visit
-          </a>
-        </div>
-
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/Space-invaders/Sc.jpg"
-            className="image"
-          />
-          <button className="prj">
-            Space-invaders<span> . py</span>
-          </button>
-          <a
-            href="https://github.com/smrnjeet222/Python_Apps/tree/master/Space-invaders"
-            className="show1"
-          >
-            Github
-          </a>
-          <a
-            href="https://github.com/smrnjeet222/Python_Apps/tree/master/Space-invaders"
-            className="show2"
-          >
-            Visit
-          </a>
-        </div>
-
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Astar.png"
-            className="image"
-          />
-          <button className="prj">
-            A*Pathfinding<span> . py</span>
-          </button>
-          <a
-            href="https://github.com/smrnjeet222/Python_Apps/tree/master/A-star"
-            className="show1"
-          >
-            Github
-          </a>
-          <a
-            href="https://repl.it/@smrnjeet222/Astar#main.py"
-            className="show2"
-          >
-            Visit
-          </a>
-        </div>
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/todo.png"
-            className="image"
-          />
-          <button className="prj">
-            React Todo <span> . js</span>
-          </button>
-          <a href="https://github.com/smrnjeet222/ReactApps" className="show1">
-            Github
-          </a>
-          <a href="https://smrnjeet222.github.io/ReactApps/" className="show2">
-            Visit
-          </a>
-        </div>
-
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/Rock-Paper-Scissors/demo.jpg"
-            className="image"
-          />
-          <button className="prj">
-            Multiplayer R.P.S<span> . py</span>
-          </button>
-          <a
-            href="https://github.com/smrnjeet222/Python_Apps/tree/master/Rock-Paper-Scissors"
-            className="show1"
-          >
-            Github
-          </a>
-          <a
-            href="https://github.com/smrnjeet222/Python_Apps/tree/master/Rock-Paper-Scissors"
-            className="show2"
-          >
-            Visit
-          </a>
-        </div>
-
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Rc.png"
-            className="image"
-          />
-          <button className="prj">
-            Ray Casting<span> . js</span>
-          </button>
-          <a
-            href="https://editor.p5js.org/smrnjeet222/collections/fvtHa48dt"
-            className="show1"
-          >
-            Github
-          </a>
-          <a
-            href="https://editor.p5js.org/smrnjeet222/sketches/j06TXs4ZF"
-            className="show2"
-          >
-            Visit
-          </a>
-        </div>
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/covid.png"
-            className="image"
-          />
-          <button className="prj">
-            Python Apps<span> . py</span>
-          </button>
-          <a
-            href="https://github.com/smrnjeet222/Python_Apps"
-            className="show1"
-          >
-            Github
-          </a>
-          <a
-            href="https://github.com/smrnjeet222/Python_Apps"
-            className="show2"
-          >
-            Visit
-          </a>
-        </div>
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/bubblesort.png"
-            className="image"
-          />
-          <button className="prj">
-            Visualisations<span> . js</span>
-          </button>
-          <a
-            href="https://editor.p5js.org/smrnjeet222/collections/fvtHa48dt"
-            className="show1"
-          >
-            Github
-          </a>
-          <a
-            href="https://editor.p5js.org/smrnjeet222/sketches/T0o5woDT5"
-            className="show2"
-          >
-            Visit
-          </a>
-        </div>
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/BLENDER/master/Abstract_Design/Abstract.png"
-            className="image"
-          />
-          <button className="prj">
-            Blender<span> . models</span>
-          </button>
-          <a href="https://smrnjeet222.github.io/BLENDER/" className="show1">
-            Github
-          </a>
-          <a
-            href="https://editor.p5js.org/smrnjeet222/sketches/T0o5woDT5"
-            className="show2"
-          >
-            Visit
-          </a>
-        </div>
-        <div className="box">
-          <img
-            alt="projimg"
-            src="https://raw.githubusercontent.com/smrnjeet222/Unity_Gamedevelopment/master/MYGAME.png"
-            className="image"
-          />
-          <button className="prj">
-            Unity Games<span> . C#</span>
-          </button>
-          <a href="https://smrnjeet-22.itch.io/" className="show1">
-            Github
-          </a>
-          <a href="https://smrnjeet-22.itch.io/" className="show2">
-            Visit
-          </a>
-        </div>
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/recipe.jpg"
+          name="Recipe App"
+          ext="js"
+          git="https://github.com/smrnjeet222/recipe-app"
+          live="https://smrnjeet222.github.io/recipe-app/"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/pg.png"
+          name="Pico-Gram"
+          ext="js"
+          git="https://github.com/smrnjeet222/PicoGram"
+          live="https://smrnjeet-picogram.web.app/"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/blog.jpg"
+          name="Django Blog"
+          ext="py"
+          git="https://github.com/smrnjeet222/Django_Blog"
+          live="https://smrnjeetblogs.herokuapp.com/"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/portfolio.png"
+          name="Old Portfolio"
+          ext="js"
+          git="https://github.com/smrnjeet222/Portfolio"
+          live="https://smrnjeet222.github.io/Portfolio/"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/Snake/Extras/play.png"
+          name="Snake Game"
+          ext="py"
+          git="https://github.com/smrnjeet222/Python_Apps/tree/master/Snake"
+          live="https://github.com/smrnjeet222/Python_Apps/tree/master/Snake"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Automail.png"
+          name="AutoMail"
+          ext="py"
+          git="https://github.com/smrnjeet222/AutoMail"
+          live="https://github.com/smrnjeet222/AutoMail"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/Unity_Gamedevelopment/master/FreakyFrog/best.png"
+          name="Freaky Frog"
+          ext="c#"
+          git="https://github.com/smrnjeet222/Unity_Gamedevelopment"
+          live="https://smrnjeet-22.itch.io/freaky-frog"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/SudokuSolver/2.png"
+          name="Sudoku Solver"
+          ext="py"
+          git="https://github.com/smrnjeet222/Python_Apps/tree/master/SudokuSolver"
+          live="https://github.com/smrnjeet222/Python_Apps/tree/master/SudokuSolver"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/Space-invaders/Sc.jpg"
+          name="Space-invaders"
+          ext="py"
+          git="https://github.com/smrnjeet222/Python_Apps/tree/master/Space-invaders"
+          live="https://github.com/smrnjeet222/Python_Apps/tree/master/Space-invaders"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Astar.png"
+          name="A*Pathfinding"
+          ext="py"
+          git="https://github.com/smrnjeet222/Python_Apps/tree/master/A-star"
+          live="https://repl.it/@smrnjeet222/Astar#main.py"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/todo.png"
+          name="React Todo "
+          ext="js"
+          git="https://github.com/smrnjeet222/ReactApps"
+          live="https://github.com/smrnjeet222/ReactApps"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/Rock-Paper-Scissors/demo.jpg"
+          name="Multiplayer R.P.S"
+          ext="py"
+          git="https://github.com/smrnjeet222/Python_Apps/tree/master/Rock-Paper-Scissors"
+          live="https://github.com/smrnjeet222/Python_Apps/tree/master/Rock-Paper-Scissors"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Rc.png"
+          name="Ray Casting"
+          ext="js"
+          git="https://editor.p5js.org/smrnjeet222/collections/fvtHa48dt"
+          live="https://editor.p5js.org/smrnjeet222/sketches/j06TXs4ZF"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/covid.png"
+          name="Python Apps"
+          ext="py"
+          git="https://github.com/smrnjeet222/Python_Apps"
+          live="https://github.com/smrnjeet222/Python_Apps"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/bubblesort.png"
+          name="Visualisations"
+          ext="js"
+          git="https://editor.p5js.org/smrnjeet222/collections/fvtHa48dt"
+          live="https://editor.p5js.org/smrnjeet222/sketches/T0o5woDT5"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/BLENDER/master/Abstract_Design/Abstract.png"
+          name="Blender"
+          ext="models"
+          git="https://github.com/smrnjeet222/BLENDER"
+          live="https://smrnjeet222.github.io/BLENDER/"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/Unity_Gamedevelopment/master/MYGAME.png"
+          name="Unity Games"
+          ext="c#"
+          git="https://github.com/smrnjeet222/Unity_Gamedevelopment"
+          live="https://smrnjeet-22.itch.io/"
+        />
       </div>
     </div>
   );
