@@ -1,4 +1,4 @@
-if (window.matchMedia("(min-width: 800px)").matches) {
+export default function randomsvg() {
   function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
