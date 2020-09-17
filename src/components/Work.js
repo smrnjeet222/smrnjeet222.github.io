@@ -10,13 +10,13 @@ export default function Work() {
       <div className="gallery">
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/recipe.jpg"
             className="image"
           />
-          <a href="#" className="prj">
-            {" "}
-            Recipe App<span> . js</span>{" "}
-          </a>
+          <button className="prj">
+            Recipe App<span> . js</span>
+          </button>
           <a href="https://github.com/smrnjeet222/recipe-app" className="show1">
             Github
           </a>
@@ -26,13 +26,13 @@ export default function Work() {
         </div>
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/pg.png"
             className="image"
           />
-          <a href="#" className="prj">
-            {" "}
-            Pico-Gram<span> . js</span>{" "}
-          </a>
+          <button className="prj">
+            Pico-Gram<span> . js</span>
+          </button>
           <a href="https://github.com/smrnjeet222/PicoGram" className="show1">
             Github
           </a>
@@ -42,13 +42,13 @@ export default function Work() {
         </div>
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/blog.jpg"
             className="image"
           />
-          <a className="prj">
-            {" "}
-            Django Blog<span> . py</span>{" "}
-          </a>
+          <button className="prj">
+            Django Blog<span> . py</span>
+          </button>
           <a
             href="https://github.com/smrnjeet222/Django_Blog"
             className="show1"
@@ -62,13 +62,13 @@ export default function Work() {
 
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/portfolio.png"
             className="image"
           />
-          <a className="prj">
-            {" "}
-            Old Portfolio<span> . js</span>{" "}
-          </a>
+          <button className="prj">
+            Old Portfolio<span> . js</span>
+          </button>
           <a href="https://github.com/smrnjeet222/Portfolio" className="show1">
             Github
           </a>
@@ -78,13 +78,13 @@ export default function Work() {
         </div>
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/Snake/Extras/play.png"
             className="image"
           />
-          <a className="prj">
-            {" "}
-            Snake Game<span> . py</span>{" "}
-          </a>
+          <button className="prj">
+            Snake Game<span> . py</span>
+          </button>
           <a
             href="https://github.com/smrnjeet222/Python_Apps/tree/master/Snake"
             className="show1"
@@ -100,13 +100,13 @@ export default function Work() {
         </div>
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Automail.png"
             className="image"
           />
-          <a className="prj">
-            {" "}
-            AutoMail<span> . py</span>{" "}
-          </a>
+          <button className="prj">
+            AutoMail<span> . py</span>
+          </button>
           <a href="https://github.com/smrnjeet222/AutoMail" className="show1">
             Github
           </a>
@@ -116,13 +116,13 @@ export default function Work() {
         </div>
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/Unity_Gamedevelopment/master/FreakyFrog/best.png"
             className="image"
           />
-          <a className="prj">
-            {" "}
-            Freaky Frog<span> . C#</span>{" "}
-          </a>
+          <button className="prj">
+            Freaky Frog<span> . C#</span>
+          </button>
           <a
             href="https://smrnjeet222.github.io/Unity_Gamedevelopment/"
             className="show1"
@@ -136,13 +136,13 @@ export default function Work() {
 
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/SudokuSolver/2.png"
             className="image"
           />
-          <a className="prj">
-            {" "}
-            Sudoku Solver<span> . py</span>{" "}
-          </a>
+          <button className="prj">
+            Sudoku Solver<span> . py</span>
+          </button>
           <a
             href="https://github.com/smrnjeet222/Python_Apps/tree/master/SudokuSolver"
             className="show1"
@@ -159,13 +159,13 @@ export default function Work() {
 
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/Space-invaders/Sc.jpg"
             className="image"
           />
-          <a className="prj">
-            {" "}
-            Space-invaders<span> . py</span>{" "}
-          </a>
+          <button className="prj">
+            Space-invaders<span> . py</span>
+          </button>
           <a
             href="https://github.com/smrnjeet222/Python_Apps/tree/master/Space-invaders"
             className="show1"
@@ -182,13 +182,13 @@ export default function Work() {
 
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Astar.png"
             className="image"
           />
-          <a className="prj">
-            {" "}
-            A*Pathfinding<span> . py</span>{" "}
-          </a>
+          <button className="prj">
+            A*Pathfinding<span> . py</span>
+          </button>
           <a
             href="https://github.com/smrnjeet222/Python_Apps/tree/master/A-star"
             className="show1"
@@ -204,13 +204,13 @@ export default function Work() {
         </div>
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/todo.png"
             className="image"
           />
-          <a className="prj">
-            {" "}
-            React Todo <span> . js</span>{" "}
-          </a>
+          <button className="prj">
+            React Todo <span> . js</span>
+          </button>
           <a href="https://github.com/smrnjeet222/ReactApps" className="show1">
             Github
           </a>
@@ -221,13 +221,13 @@ export default function Work() {
 
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/Rock-Paper-Scissors/demo.jpg"
             className="image"
           />
-          <a className="prj">
-            {" "}
-            Multiplayer R.P.S<span> . py</span>{" "}
-          </a>
+          <button className="prj">
+            Multiplayer R.P.S<span> . py</span>
+          </button>
           <a
             href="https://github.com/smrnjeet222/Python_Apps/tree/master/Rock-Paper-Scissors"
             className="show1"
@@ -244,13 +244,13 @@ export default function Work() {
 
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Rc.png"
             className="image"
           />
-          <a className="prj">
-            {" "}
-            Ray Casting<span> . js</span>{" "}
-          </a>
+          <button className="prj">
+            Ray Casting<span> . js</span>
+          </button>
           <a
             href="https://editor.p5js.org/smrnjeet222/collections/fvtHa48dt"
             className="show1"
@@ -266,13 +266,13 @@ export default function Work() {
         </div>
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/covid.png"
             className="image"
           />
-          <a className="prj">
-            {" "}
-            Python Apps<span> . py</span>{" "}
-          </a>
+          <button className="prj">
+            Python Apps<span> . py</span>
+          </button>
           <a
             href="https://github.com/smrnjeet222/Python_Apps"
             className="show1"
@@ -288,13 +288,13 @@ export default function Work() {
         </div>
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/bubblesort.png"
             className="image"
           />
-          <a className="prj">
-            {" "}
-            Visualisations<span> . js</span>{" "}
-          </a>
+          <button className="prj">
+            Visualisations<span> . js</span>
+          </button>
           <a
             href="https://editor.p5js.org/smrnjeet222/collections/fvtHa48dt"
             className="show1"
@@ -310,13 +310,13 @@ export default function Work() {
         </div>
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/BLENDER/master/Abstract_Design/Abstract.png"
             className="image"
           />
-          <a className="prj">
-            {" "}
-            Blender<span> . models</span>{" "}
-          </a>
+          <button className="prj">
+            Blender<span> . models</span>
+          </button>
           <a href="https://smrnjeet222.github.io/BLENDER/" className="show1">
             Github
           </a>
@@ -329,13 +329,13 @@ export default function Work() {
         </div>
         <div className="box">
           <img
+            alt="projimg"
             src="https://raw.githubusercontent.com/smrnjeet222/Unity_Gamedevelopment/master/MYGAME.png"
             className="image"
           />
-          <a className="prj">
-            {" "}
-            Unity Games<span> . C#</span>{" "}
-          </a>
+          <button className="prj">
+            Unity Games<span> . C#</span>
+          </button>
           <a href="https://smrnjeet-22.itch.io/" className="show1">
             Github
           </a>

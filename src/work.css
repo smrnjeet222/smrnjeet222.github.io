@@ -5,6 +5,15 @@
   left: 0;
   top: 0;
 }
+
+button {
+  border: none;
+  margin: 0;
+}
+button:focus {
+  outline: none;
+}
+
 .gallery {
   -webkit-column-count: 4;
   -moz-column-count: 4;

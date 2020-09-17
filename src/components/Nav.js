@@ -45,17 +45,29 @@ export default function Nav() {
         </nav>
         <ul>
           <li>
-            <a href="https://www.instagram.com/smrnjeet_22/" target="_blank">
+            <a
+              href="https://www.instagram.com/smrnjeet_22/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-instagram"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.reddit.com/user/smrnjeet_22" target="_blank">
+            <a
+              href="https://www.reddit.com/user/smrnjeet_22"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-reddit-alien"></i>
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/Att_Sardar_ji" target="_blank">
+            <a
+              href="https://twitter.com/Att_Sardar_ji"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-twitter"></i>
             </a>
           </li>

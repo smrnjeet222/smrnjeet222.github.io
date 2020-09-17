@@ -9,7 +9,6 @@ import Contact from "./components/Contact";
 export default function App() {
   useEffect(() => {
     const cls = document.querySelectorAll(".blast");
-    console.log(cls);
     cls.forEach((cl) => {
       cl.addEventListener("mouseover", function () {
         cl.classList.add("animated");
