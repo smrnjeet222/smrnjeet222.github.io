@@ -24,6 +24,7 @@ export default function Skills() {
     });
     links[2].classList.add("active-nav");
   }, []);
+
   return (
     <>
       <div className="container home-page">

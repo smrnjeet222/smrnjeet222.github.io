@@ -1,10 +1,30 @@
 import React, { useEffect } from "react";
+import { motion } from "framer-motion";
+
 import "../work.css";
+const container = {
+  hidden: { scale: 1 },
+  show: {
+    scale: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+const item = {
+  hidden: { scale: 0 },
+  show: { scale: 1 },
+};
 
 function Post({ img, name, ext, git, live }) {
   return (
-    <div className="box">
-      <img alt="projimg" src={img} className="image" />
+    <motion.div className="box" variants={item}>
+      <img
+        alt="projimg"
+        src={img}
+        className="image"
+        style={{ backgroundColor: "#c2c2c2" }}
+      />
       <button className="prj">
         {name}
         <span> . {ext}</span>
@@ -15,7 +35,7 @@ function Post({ img, name, ext, git, live }) {
       <a href={live} className="show2">
         Visit
       </a>
-    </div>
+    </motion.div>
   );
 }
 
@@ -32,7 +52,12 @@ export default function Work() {
       {/* <h1 style={{ textAlign: "center", margin: "1rem", color: "#23ffde" }}>
         My Projects
       </h1> */}
-      <div className="gallery">
+      <motion.div
+        className="gallery"
+        variants={container}
+        initial="hidden"
+        animate="show"
+      >
         <Post
           img="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/recipe.jpg"
           name="Recipe App"
@@ -152,7 +177,7 @@ export default function Work() {
           git="https://github.com/smrnjeet222/Unity_Gamedevelopment"
           live="https://smrnjeet-22.itch.io/"
         />
-      </div>
+      </motion.div>
     </div>
   );
 }

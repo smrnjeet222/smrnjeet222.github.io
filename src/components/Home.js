@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+
 import getRandomInt from "../script/randomsvg";
 
 export default function Home() {

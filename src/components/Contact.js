@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   useEffect(() => {
@@ -27,44 +28,70 @@ export default function Contact() {
   function handleSubmit(e) {
     alert("Your Message is sent!");
   }
+  const spring = {
+    type: "spring",
+    stiffness: 700,
+    damping: 40,
+  };
+
+  const container = {
+    hidden: { scale: 1 },
+    show: {
+      scale: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+  const item = {
+    hidden: { scale: 0 },
+    show: { scale: 1 },
+  };
+  const style = {
+    opacity: 1,
+    color: "#23ffde",
+  };
 
   return (
     <>
       <div className="container home-page" style={{ zoom: "95%" }}>
         <span className="tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
         <div className="text-zone">
-          <h1
+          <motion.h1
+            variants={container}
+            initial="hidden"
+            animate="show"
             aria-label=" Hi, I’m Simranjeet,web developer."
             className="blast-root"
           >
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            <motion.span className="blast" variants={item} style={style}>
               C
-            </span>
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            </motion.span>
+            <motion.span className="blast" variants={item} style={style}>
               o
-            </span>
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            </motion.span>
+            <motion.span className="blast" variants={item} style={style}>
               n
-            </span>
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            </motion.span>
+            <motion.span className="blast" variants={item} style={style}>
               t
-            </span>
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            </motion.span>
+            <motion.span className="blast" variants={item} style={style}>
               a
-            </span>
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            </motion.span>
+            <motion.span className="blast" variants={item} style={style}>
               c
-            </span>
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            </motion.span>
+            <motion.span className="blast" variants={item} style={style}>
               t&nbsp;
-            </span>
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            </motion.span>
+            <motion.span className="blast" variants={item} style={style}>
               m
-            </span>
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            </motion.span>
+            <motion.span className="blast" variants={item} style={style}>
               e
-            </span>
-          </h1>
+            </motion.span>
+          </motion.h1>
           <p>
             I am interested in freelance opportunities – especially ambitious or
             large projects. However, if you have other request or question,
@@ -88,30 +115,42 @@ export default function Contact() {
               autoComplete="off"
               onSubmit={handleSubmit}
             >
-              <input
+              <motion.input
                 id="name"
                 type="text"
                 name="entry.649112156"
                 placeholder="Name *"
                 required={true}
+                initial={{ y: "100vh" }}
+                animate={{ y: 0 }}
+                layout
+                transition={{ ...spring, delay: 0.1 }}
               />
               &nbsp;
-              <input
+              <motion.input
                 id="email"
                 type="email"
                 name="entry.1560288382"
                 placeholder="Email *"
                 required={true}
+                initial={{ y: "100vh" }}
+                animate={{ y: 0 }}
+                layout
+                transition={{ ...spring, delay: 0.2 }}
               />
               <br />
-              <input
+              <motion.input
                 id="sbj"
                 type="text"
                 name="entry.1406382583"
                 placeholder="Subject (optional)"
+                initial={{ y: "100vh" }}
+                animate={{ y: 0 }}
+                layout
+                transition={{ ...spring, delay: 0.4 }}
               />
               <br />
-              <textarea
+              <motion.textarea
                 id="msg"
                 type="text"
                 name="entry.728219473"
@@ -119,11 +158,25 @@ export default function Contact() {
                 required={true}
                 cols="50"
                 rows="10"
-              ></textarea>
+                initial={{ y: "100vh" }}
+                animate={{ y: 0 }}
+                layout
+                transition={{ ...spring, delay: 0.7 }}
+              ></motion.textarea>
               <br />
-              <input id="sub-btn" type="submit" value="Send" />
+              <motion.input
+                id="sub-btn"
+                type="submit"
+                value="Send"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.9 }}
+              />
             </form>
-            <p
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.9 }}
               style={{
                 color: "aliceblue",
                 maxWidth: "60%",
@@ -139,7 +192,7 @@ export default function Contact() {
               >
                 smrnjeet222@gmail.com
               </a>
-            </p>
+            </motion.p>
           </div>
         </div>
 
@@ -150,7 +203,13 @@ export default function Contact() {
         </span>
       </div>
 
-      <div className="mapouter">
+      <motion.div
+        className="mapouter"
+        style={{ backgroundColor: "#e2e2e2" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.7, duration: 1 }}
+      >
         <div className="gmap_canvas">
           <iframe
             title="gmap_canvas"
@@ -163,7 +222,7 @@ export default function Contact() {
             scrolling="no"
           ></iframe>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
