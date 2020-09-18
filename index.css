@@ -158,8 +158,8 @@ a:hover {
   margin-top: 2.5rem;
   /* border: 1px solid #979797; */
   float: left;
-  -webkit-animation: myanim2 1s 0.8s backwards;
-  animation: myanim2 1s 0.8s backwards;
+  -webkit-animation: myanim2 1s 0.5s backwards;
+  animation: myanim2 1s 0.5s backwards;
 }
 .icons a {
   color: #23ffde;
@@ -195,6 +195,7 @@ h1 {
   width: 60%;
   height: 100vh;
   transform: rotateY(180deg);
+  animation: myanim2 0.5s ease-in;
 }
 
 .tags {
@@ -219,6 +220,7 @@ h1 {
   opacity: 1;
   margin: 0 1rem;
   z-index: 1;
+  animation: myanim2 0.5s ease-in;
 }
 
 .text-zone span {
@@ -288,8 +290,8 @@ h1 {
   font-size: 11px;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 3px;
-  -webkit-animation: myanim2 1s 0.8s backwards;
-  animation: myanim2 1s 0.8s backwards;
+  -webkit-animation: myanim2 0.8s 0.2s backwards;
+  animation: myanim2 0.8s 0.2s backwards;
 }
 
 .blast {
@@ -677,4 +679,17 @@ textarea {
   .text-zone h1:after {
     padding-right: 5%;
   }
+}
+
+.slide-enter,
+.slide-exit {
+  transition: opacity 500ms ease-out;
+}
+
+.slide-enter {
+  opacity: 1;
+}
+
+.slide-exit {
+  opacity: 0;
 }
