@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   useEffect(() => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
     const cls = document.querySelectorAll(".blast");
     cls.forEach((cl) => {
       cl.addEventListener("mouseover", function () {
@@ -121,7 +123,7 @@ export default function Contact() {
                 name="entry.649112156"
                 placeholder="Name *"
                 required={true}
-                initial={{ y: "100vh" }}
+                initial={{ y: "120vh" }}
                 animate={{ y: 0 }}
                 layout
                 transition={{ ...spring, delay: 0.1 }}
@@ -133,7 +135,7 @@ export default function Contact() {
                 name="entry.1560288382"
                 placeholder="Email *"
                 required={true}
-                initial={{ y: "100vh" }}
+                initial={{ y: "120vh" }}
                 animate={{ y: 0 }}
                 layout
                 transition={{ ...spring, delay: 0.2 }}
@@ -144,7 +146,7 @@ export default function Contact() {
                 type="text"
                 name="entry.1406382583"
                 placeholder="Subject (optional)"
-                initial={{ y: "100vh" }}
+                initial={{ y: "120vh" }}
                 animate={{ y: 0 }}
                 layout
                 transition={{ ...spring, delay: 0.4 }}
@@ -158,7 +160,7 @@ export default function Contact() {
                 required={true}
                 cols="50"
                 rows="10"
-                initial={{ y: "100vh" }}
+                initial={{ y: "120vh" }}
                 animate={{ y: 0 }}
                 layout
                 transition={{ ...spring, delay: 0.7 }}
