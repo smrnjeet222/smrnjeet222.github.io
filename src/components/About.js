@@ -1,28 +1,15 @@
 import React, { useEffect } from "react";
 import getRandomInt from "../script/randomsvg";
+import bounce from "../script/bounce";
+import navLinks from "../script/navlinks";
 
 export default function About() {
   useEffect(() => {
-    const cls = document.querySelectorAll(".blast");
-    cls.forEach((cl) => {
-      cl.addEventListener("mouseover", function () {
-        cl.classList.add("animated");
-        cl.classList.add("rubberBand");
-      });
+    document.title = "Simranjeet Singh | About Me ";
 
-      cl.addEventListener("mouseleave", function () {
-        setTimeout(function () {
-          cl.classList.remove("animated");
-          cl.classList.remove("rubberBand");
-        }, 1000);
-      });
-    });
+    bounce();
 
-    const links = document.querySelectorAll(".link");
-    links.forEach((al) => {
-      al.classList.remove("active-nav");
-    });
-    links[1].classList.add("active-nav");
+    navLinks(1);
   }, []);
 
   return (

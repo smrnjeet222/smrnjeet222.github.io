@@ -1,28 +1,15 @@
 import React, { useEffect } from "react";
+import bounce from "../script/bounce";
+import navLinks from "../script/navlinks";
 import getRandomInt from "../script/randomsvg";
 
 export default function Skills() {
   useEffect(() => {
-    const cls = document.querySelectorAll(".blast");
-    cls.forEach((cl) => {
-      cl.addEventListener("mouseover", function () {
-        cl.classList.add("animated");
-        cl.classList.add("rubberBand");
-      });
+    document.title = "Simranjeet Singh | Skills ";
 
-      cl.addEventListener("mouseleave", function () {
-        setTimeout(function () {
-          cl.classList.remove("animated");
-          cl.classList.remove("rubberBand");
-        }, 1000);
-      });
-    });
+    bounce();
 
-    const links = document.querySelectorAll(".link");
-    links.forEach((al) => {
-      al.classList.remove("active-nav");
-    });
-    links[2].classList.add("active-nav");
+    navLinks(2);
   }, []);
 
   return (

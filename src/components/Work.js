@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
+import navLinks from "../script/navlinks";
 import "../work.css";
+
 const container = {
   hidden: { scale: 1 },
   show: {
@@ -41,27 +43,11 @@ function Post({ img, name, ext, git, live }) {
 
 export default function Work() {
   useEffect(() => {
-    const cls = document.querySelectorAll(".blast");
-    cls.forEach((cl) => {
-      cl.addEventListener("mouseover", function () {
-        cl.classList.add("animated");
-        cl.classList.add("rubberBand");
-      });
+    document.title = "Simranjeet Singh | Projects ";
 
-      cl.addEventListener("mouseleave", function () {
-        setTimeout(function () {
-          cl.classList.remove("animated");
-          cl.classList.remove("rubberBand");
-        }, 1000);
-      });
-    });
-
-    const links = document.querySelectorAll(".link");
-    links.forEach((al) => {
-      al.classList.remove("active-nav");
-    });
-    links[3].classList.add("active-nav");
+    navLinks(3);
   }, []);
+
   return (
     <div className="gal-container">
       {/* <h1 style={{ textAlign: "center", margin: "1rem", color: "#23ffde" }}>
@@ -149,7 +135,7 @@ export default function Work() {
           name="React Todo "
           ext="js"
           git="https://github.com/smrnjeet222/ReactApps"
-          live="https://github.com/smrnjeet222/ReactApps"
+          live="https://smrnjeet222.github.io/ReactApps/"
         />
         <Post
           img="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/Rock-Paper-Scissors/demo.jpg"
