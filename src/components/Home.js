@@ -22,98 +22,40 @@ export default function Home() {
             aria-label=" Hi, I’m Simranjeet,web developer."
             className="blast-root"
           >
-            <span className="blast" style={{ opacity: 1 }}>
-              H
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              i
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              ,
-            </span>
+            <span className="blast">H</span>
+            <span className="blast">i</span>
+            <span className="blast">,</span>
             <br />
-            <span className="blast" style={{ opacity: 1 }}>
-              I
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              ’
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              m&nbsp;
-            </span>
-            <span className="Slast" style={{ opacity: 1 }}>
-              S
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              i
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              m
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              r
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              a
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              n
-            </span>
-            <span className="blast" style={{ opacity: 1, paddingLeft: "3px" }}>
+            <span className="blast">I</span>
+            <span className="blast">’</span>
+            <span className="blast">m&nbsp;</span>
+            <span className="Slast">S</span>
+            <span className="blast">i</span>
+            <span className="blast">m</span>
+            <span className="blast">r</span>
+            <span className="blast">a</span>
+            <span className="blast">n</span>
+            <span className="blast" style={{ paddingLeft: "3px" }}>
               j
             </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              e
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              e
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              t
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              ,
-            </span>
+            <span className="blast">e</span>
+            <span className="blast">e</span>
+            <span className="blast">t</span>
+            <span className="blast">,</span>
             <br />
-            <span className="blast" style={{ opacity: 1 }}>
-              w
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              e
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              b&nbsp;
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              d
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              e
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              v
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              e
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              l
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              o
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              p
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              e
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              r
-            </span>
-            <span className="blast" style={{ opacity: 1 }}>
-              .
-            </span>
+            <span className="blast">w</span>
+            <span className="blast">e</span>
+            <span className="blast">b&nbsp;</span>
+            <span className="blast">d</span>
+            <span className="blast">e</span>
+            <span className="blast">v</span>
+            <span className="blast">e</span>
+            <span className="blast">l</span>
+            <span className="blast">o</span>
+            <span className="blast">p</span>
+            <span className="blast">e</span>
+            <span className="blast">r</span>
+            <span className="blast">.</span>
           </h1>
           <h2>Full Stack Developer / Python Programmer / Freelancer</h2>
           <div className="icons">

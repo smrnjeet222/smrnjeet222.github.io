@@ -21,13 +21,13 @@ export default function Skills() {
             aria-label=" Hi, I’m Simranjeet,web developer."
             className="blast-root"
           >
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            <span className="blast" style={{ color: "#23ffde" }}>
               Skills&nbsp;
             </span>
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            <span className="blast" style={{ color: "#23ffde" }}>
               &&nbsp;
             </span>
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            <span className="blast" style={{ color: "#23ffde" }}>
               Experience
             </span>
           </h1>

@@ -17,28 +17,11 @@ export default function Contact() {
   function handleSubmit(e) {
     alert("Your Message is sent!");
   }
+
   const spring = {
     type: "spring",
     stiffness: 700,
     damping: 40,
-  };
-
-  const container = {
-    hidden: { scale: 1 },
-    show: {
-      scale: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
-  const item = {
-    hidden: { scale: 0 },
-    show: { scale: 1 },
-  };
-  const style = {
-    opacity: 1,
-    color: "#23ffde",
   };
 
   return (
@@ -46,41 +29,38 @@ export default function Contact() {
       <div className="container home-page" style={{ zoom: "95%" }}>
         <span className="tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
         <div className="text-zone">
-          <motion.h1
-            variants={container}
-            initial="hidden"
-            animate="show"
+          <h1
             aria-label=" Hi, I’m Simranjeet,web developer."
             className="blast-root"
           >
-            <motion.span className="blast" variants={item} style={style}>
+            <span className="blast" style={{ color: "#23ffde" }}>
               C
-            </motion.span>
-            <motion.span className="blast" variants={item} style={style}>
+            </span>
+            <span className="blast" style={{ color: "#23ffde" }}>
               o
-            </motion.span>
-            <motion.span className="blast" variants={item} style={style}>
+            </span>
+            <span className="blast" style={{ color: "#23ffde" }}>
               n
-            </motion.span>
-            <motion.span className="blast" variants={item} style={style}>
+            </span>
+            <span className="blast" style={{ color: "#23ffde" }}>
               t
-            </motion.span>
-            <motion.span className="blast" variants={item} style={style}>
+            </span>
+            <span className="blast" style={{ color: "#23ffde" }}>
               a
-            </motion.span>
-            <motion.span className="blast" variants={item} style={style}>
+            </span>
+            <span className="blast" style={{ color: "#23ffde" }}>
               c
-            </motion.span>
-            <motion.span className="blast" variants={item} style={style}>
+            </span>
+            <span className="blast" style={{ color: "#23ffde" }}>
               t&nbsp;
-            </motion.span>
-            <motion.span className="blast" variants={item} style={style}>
+            </span>
+            <span className="blast" style={{ color: "#23ffde" }}>
               m
-            </motion.span>
-            <motion.span className="blast" variants={item} style={style}>
+            </span>
+            <span className="blast" style={{ color: "#23ffde" }}>
               e
-            </motion.span>
-          </motion.h1>
+            </span>
+          </h1>
           <p>
             I am interested in freelance opportunities – especially ambitious or
             large projects. However, if you have other request or question,

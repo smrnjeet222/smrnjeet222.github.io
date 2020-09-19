@@ -21,25 +21,25 @@ export default function About() {
             aria-label=" Hi, I’m Simranjeet,web developer."
             className="blast-root"
           >
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            <span className="blast" style={{ color: "#23ffde" }}>
               A
             </span>
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            <span className="blast" style={{ color: "#23ffde" }}>
               b
             </span>
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            <span className="blast" style={{ color: "#23ffde" }}>
               o
             </span>
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            <span className="blast" style={{ color: "#23ffde" }}>
               u
             </span>
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            <span className="blast" style={{ color: "#23ffde" }}>
               t&nbsp;
             </span>
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            <span className="blast" style={{ color: "#23ffde" }}>
               m
             </span>
-            <span className="blast" style={{ opacity: 1, color: "#23ffde" }}>
+            <span className="blast" style={{ color: "#23ffde" }}>
               e
             </span>
           </h1>
