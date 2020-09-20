@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 
 import Nav from "./components/Nav";
 import Home from "./components/Home";
@@ -28,6 +33,7 @@ export default function App() {
         <Route path={process.env.PUBLIC_URL + "/contact"} exact>
           <Contact />
         </Route>
+        <Redirect to="/" />
       </Switch>
     </Router>
   );

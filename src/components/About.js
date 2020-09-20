@@ -1,15 +1,12 @@
 import React, { useEffect } from "react";
 import getRandomInt from "../script/randomsvg";
 import bounce from "../script/bounce";
-import navLinks from "../script/navlinks";
 
 export default function About() {
   useEffect(() => {
     document.title = "Simranjeet Singh | About Me ";
 
     bounce();
-
-    navLinks(1);
   }, []);
 
   return (

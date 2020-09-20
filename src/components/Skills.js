@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import bounce from "../script/bounce";
-import navLinks from "../script/navlinks";
 import getRandomInt from "../script/randomsvg";
 
 export default function Skills() {
@@ -8,8 +7,6 @@ export default function Skills() {
     document.title = "Simranjeet Singh | Skills ";
 
     bounce();
-
-    navLinks(2);
   }, []);
 
   return (

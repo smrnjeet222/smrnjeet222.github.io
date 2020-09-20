@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Nav() {
   return (
@@ -14,36 +14,57 @@ export default function Nav() {
         </a>
 
         <nav>
-          <Link to={process.env.PUBLIC_URL + "/"} className="link ">
+          <NavLink
+            to={process.env.PUBLIC_URL + "/"}
+            className="link"
+            activeClassName="active-nav"
+            exact
+          >
             <i className="fas fa-home fa-2x"></i>
             <div className="overlay">
               <div className="text">HOME</div>
             </div>
-          </Link>
-          <Link to={process.env.PUBLIC_URL + "/about"} className="link">
+          </NavLink>
+          <NavLink
+            to={process.env.PUBLIC_URL + "/about"}
+            className="link"
+            activeClassName="active-nav"
+          >
             <i className="image fas fa-user fa-2x"></i>
             <div className="overlay">
               <div className="text">ABOUT</div>
             </div>
-          </Link>
-          <Link to={process.env.PUBLIC_URL + "/skills"} className="link">
+          </NavLink>
+          <NavLink
+            to={process.env.PUBLIC_URL + "/skills"}
+            className="link"
+            activeClassName="active-nav"
+          >
             <i className="fas fa-cogs fa-2x"></i>
             <div className="overlay">
               <div className="text">SKILLS</div>
             </div>
-          </Link>
-          <Link to={process.env.PUBLIC_URL + "/work"} className="link">
+          </NavLink>
+          <NavLink
+            to={process.env.PUBLIC_URL + "/work"}
+            className="link"
+            activeClassName="active-nav"
+          >
             <i className="fas fa-eye fa-2x"></i>
             <div className="overlay">
               <div className="text">MY WORK</div>
             </div>
-          </Link>
-          <Link to={process.env.PUBLIC_URL + "/contact"} className="link">
+          </NavLink>
+          <NavLink
+            to={process.env.PUBLIC_URL + "/contact"}
+            className="link"
+            activeClassName="active-nav"
+          >
             <i className="fas fa-envelope fa-2x"></i>
             <div className="overlay">
               <div className="text">CONTACT</div>
             </div>
-          </Link>
+          </NavLink>
         </nav>
         <ul>
           <li>

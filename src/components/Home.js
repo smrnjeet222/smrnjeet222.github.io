@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import bounce from "../script/bounce";
-import navLinks from "../script/navlinks";
 
 import getRandomInt from "../script/randomsvg";
 
@@ -8,9 +7,11 @@ export default function Home() {
   useEffect(() => {
     document.title =
       "Simranjeet Singh | Full Stack Developer | Python Developer";
-
     bounce();
-    navLinks(0);
+    const s = document.querySelector(".Slast");
+
+    s.style.opacity = 1;
+    s.style.transform = "rotate(360deg)";
   }, []);
 
   return (

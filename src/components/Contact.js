@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import bounce from "../script/bounce";
-import navLinks from "../script/navlinks";
 
 export default function Contact() {
   useEffect(() => {
@@ -10,8 +9,6 @@ export default function Contact() {
     document.title = "Simranjeet Singh | Contact Me";
 
     bounce();
-
-    navLinks(4);
   }, []);
 
   function handleSubmit(e) {

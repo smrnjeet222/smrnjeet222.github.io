@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
-import navLinks from "../script/navlinks";
 import "../work.css";
 
 const container = {
@@ -44,8 +43,6 @@ function Post({ img, name, ext, git, live }) {
 export default function Work() {
   useEffect(() => {
     document.title = "Simranjeet Singh | Projects ";
-
-    navLinks(3);
   }, []);
 
   return (

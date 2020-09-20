@@ -153,16 +153,16 @@ a:hover {
   margin-top: 2.5rem;
   /* border: 1px solid #979797; */
   float: left;
-  -webkit-animation: myanim2 1s 0.5s backwards;
-  animation: myanim2 1s 0.5s backwards;
+  -webkit-animation: myanim2 1s 1s backwards;
+  animation: myanim2 1s 1s backwards;
   a {
     color: #23ffde;
     padding: 0.5rem;
     padding-right: 1rem;
-  }
-  &:hover {
-    color: #ffe7ee;
-    transition: all 0.3s ease-out;
+    &:hover {
+      color: #ffe7ee;
+      transition: all 0.3s ease-out;
+    }
   }
 }
 
@@ -227,6 +227,10 @@ h1 {
     padding: 4px;
     color: #ff2b6b;
     text-shadow: -1px 0 #08fdd8, -2px 0 #08fdd8, -3px 0 #08fdd8;
+    display: inline-block;
+    transform: rotate(180deg);
+    opacity: 0;
+    transition: opacity 0.3s 0.5s ease, transform 0.25s 0.5s ease;
   }
   h2 {
     color: #fff;
@@ -287,8 +291,8 @@ h1 {
     font-size: 11px;
     font-family: "Open Sans", sans-serif;
     letter-spacing: 3px;
-    -webkit-animation: myanim2 0.8s 0.2s backwards;
-    animation: myanim2 0.8s 0.2s backwards;
+    -webkit-animation: myanim2 0.8s 0.5s backwards;
+    animation: myanim2 0.8s 0.5s backwards;
   }
   .blast {
     opacity: 0;
