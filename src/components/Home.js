@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import bounce from "../script/bounce";
 
-import getRandomInt from "../script/randomsvg";
-
 export default function Home() {
   useEffect(() => {
     document.title =
@@ -84,7 +82,9 @@ export default function Home() {
       <div id="mysvg">
         <img
           alt="hacker"
-          src={`https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/code${getRandomInt()}.svg`}
+          src={`https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/code${
+            Math.floor(Math.random() * 4) + 1
+          }.svg`}
         />
       </div>
     </>
