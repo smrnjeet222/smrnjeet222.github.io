@@ -17,6 +17,10 @@ export default function App() {
   return (
     <Router>
       <Nav />
+      <audio
+        id="music"
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Shuffle_A.mp3"
+      ></audio>
       <Switch>
         <Route path={process.env.PUBLIC_URL + "/"} exact>
           <Home />

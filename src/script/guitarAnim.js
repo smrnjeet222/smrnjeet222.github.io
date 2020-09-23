@@ -7,6 +7,9 @@ export default function guitarAnim() {
   //Varibles for the animation
   const guitar = document.getElementById("guitar_2_");
 
+  let play = document.querySelector(".play");
+  const audio = document.getElementById("music");
+
   const strings = document.getElementById("strings");
 
   const speaker_1 = document.getElementById("speaker-1");
@@ -23,6 +26,10 @@ export default function guitarAnim() {
   //Declare timeline
   var pluck = new TimelineMax({
     paused: true,
+  });
+  var pluck2 = new TimelineMax({
+    paused: true,
+    repeat: -1,
   });
 
   //String Animtaions
@@ -43,9 +50,10 @@ export default function guitarAnim() {
 
     .to(note_4, 0.4, { x: "5%", y: "-2%" }, "-=1.1")
     .to(note_4, 0.2, { opacity: 1 }, "-=1.1")
-    .to(note_4, 0.2, { opacity: 0 }, "-=0.9")
+    .to(note_4, 0.2, { opacity: 0 }, "-=0.9");
 
-    //Sparks Animations
+  //Sparks Animations
+  pluck2
     .to(spark_1, 0.4, { x: "-5%", y: "5%" }, "-=1.1")
     .to(spark_1, 0.2, { opacity: 1 }, "-=1.1")
     .to(spark_1, 0.2, { opacity: 0 }, "-=0.9")
@@ -81,13 +89,13 @@ export default function guitarAnim() {
     .to(
       speaker_2,
       0.4,
-      { transform: "scale(0.9)", transformOrigin: "bottom" },
+      { transform: "scale(0.9)", transformOrigin: "center" },
       "-=0.95"
     );
 
   //Trigger Audio
   var i = 0;
-  function playAudio() {
+  function playGuitar() {
     if (i < 12) {
       ++i;
     } else {
@@ -100,8 +108,43 @@ export default function guitarAnim() {
   function rockOut() {
     pluck.restart();
     pluck.play();
-    playAudio();
+    playGuitar();
   }
+
   //Do the stuff when clicked
   guitar.addEventListener("click", rockOut);
+  audio.addEventListener("pause", pauseTrack);
+  audio.addEventListener("play", playTrack);
+
+  play.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play();
+      playTrack();
+    } else {
+      audio.pause();
+      pauseTrack();
+    }
+  });
+
+  audio.addEventListener("ended", () => {
+    pauseTrack();
+  });
+
+  function playTrack() {
+    play.querySelector(".pause-icon").style.display = "block";
+    play.querySelector(".play-icon").style.display = "none";
+    pluck2.play();
+  }
+
+  function pauseTrack() {
+    play.querySelector(".pause-icon").style.display = "none";
+    play.querySelector(".play-icon").style.display = "block";
+    pluck2.pause();
+  }
+
+  if (audio.paused) {
+    pauseTrack();
+  } else {
+    playTrack();
+  }
 }

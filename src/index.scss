@@ -188,7 +188,7 @@ h1 {
     width: 60%;
     height: 100vh;
     transform: rotateY(180deg);
-    animation: myanim2 0.8s ease-in;
+    animation: myanim2 1s ease-in;
   }
 }
 
@@ -313,10 +313,28 @@ h1 {
   right: 5%;
   height: 100vh;
   z-index: 100;
+  animation: myanim2 0.8s ease-in;
+}
+.play {
+  position: fixed;
+  height: 25px;
+  transform: translate(60% 50%);
+  cursor: pointer;
+  &:hover polygon {
+    stroke: #000;
+  }
+  &:hover rect {
+    fill: #000;
+  }
+}
+.pause-icon {
+  display: none;
 }
 
 .notes,
-.sparks {
+#spark-1,
+#spark-3,
+#spark-4 {
   opacity: 0;
 }
 
