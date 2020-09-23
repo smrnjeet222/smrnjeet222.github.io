@@ -188,7 +188,7 @@ h1 {
     width: 60%;
     height: 100vh;
     transform: rotateY(180deg);
-    animation: myanim2 0.5s ease-in;
+    animation: myanim2 0.8s ease-in;
   }
 }
 
@@ -213,7 +213,7 @@ h1 {
   height: 90%;
   opacity: 1;
   margin: 0 1rem;
-  z-index: 1;
+  z-index: 0;
   animation: myanim2 0.5s ease-in;
 }
 
@@ -306,10 +306,31 @@ h1 {
   }
 }
 
-// .home-page .flat-button:hover {
-//   background: #08fdd8;
-//   color: #333;
-// }
+.guitarSvg {
+  position: absolute;
+  width: 40vw;
+  padding: 40px 60px 100px 40px;
+  right: 5%;
+  height: 100vh;
+  z-index: 100;
+}
+
+.notes,
+.sparks {
+  opacity: 0;
+}
+
+#shadow {
+  animation: shadow 4s infinite linear;
+  transform-origin: 50% 50%;
+}
+
+#guitar_2_ {
+  animation: hover 4s infinite linear;
+  &:hover {
+    cursor: pointer;
+  }
+}
 
 .bkmrk {
   position: fixed;
@@ -437,6 +458,30 @@ textarea {
 }
 
 /* _________________________________Keyframes___________________________________________ */
+@keyframes hover {
+  from,
+  to {
+    transition-timing-function: ease-in-out;
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transition-timing-function: ease-in-out;
+    transform: translate3d(0, 1.5%, 0);
+  }
+}
+
+@keyframes shadow {
+  from,
+  to {
+    transition-timing-function: ease-in-out;
+    transform: scale(0.95, 1);
+  }
+  50% {
+    transition-timing-function: ease-in-out;
+    transform: scale(1.05, 1);
+  }
+}
+
 @keyframes popup {
   0% {
     transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);

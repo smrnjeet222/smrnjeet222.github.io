@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
+import SVG from "react-inlinesvg";
+
+import Guitar from "./Guitar.svg";
 import bounce from "../script/bounce";
+import guitarAnim from "../script/guitarAnim";
 
 export default function Home() {
   useEffect(() => {
@@ -10,6 +14,8 @@ export default function Home() {
 
     s.style.opacity = 1;
     s.style.transform = "rotate(360deg)";
+
+    guitarAnim();
   }, []);
 
   return (
@@ -80,12 +86,91 @@ export default function Home() {
         </span>
       </div>
       <div id="mysvg">
-        <img
-          alt="hacker"
-          src={`https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/code${
-            Math.floor(Math.random() * 4) + 1
-          }.svg`}
-        />
+        <SVG src={Guitar} className="guitarSvg" />
+        <audio id="audio-1">
+          <source
+            src="https://s3.amazonaws.com/iamjoshellis-codepen/pens-of-rock/guitar/smoke-on-the-water-1.mp3"
+            preload="auto"
+            type="audio/mp3"
+          />
+        </audio>
+        <audio id="audio-2">
+          <source
+            src="https://s3.amazonaws.com/iamjoshellis-codepen/pens-of-rock/guitar/smoke-on-the-water-2.mp3"
+            preload="auto"
+            type="audio/mp3"
+          />
+        </audio>
+        <audio id="audio-3">
+          <source
+            src="https://s3.amazonaws.com/iamjoshellis-codepen/pens-of-rock/guitar/smoke-on-the-water-3.mp3"
+            preload="auto"
+            type="audio/mp3"
+          />
+        </audio>
+        <audio id="audio-4">
+          <source
+            src="https://s3.amazonaws.com/iamjoshellis-codepen/pens-of-rock/guitar/smoke-on-the-water-4.mp3"
+            preload="auto"
+            type="audio/mp3"
+          />
+        </audio>
+        <audio id="audio-5">
+          <source
+            src="https://s3.amazonaws.com/iamjoshellis-codepen/pens-of-rock/guitar/smoke-on-the-water-5.mp3"
+            preload="auto"
+            type="audio/mp3"
+          />
+        </audio>
+        <audio id="audio-6">
+          <source
+            src="https://s3.amazonaws.com/iamjoshellis-codepen/pens-of-rock/guitar/smoke-on-the-water-6.mp3"
+            preload="auto"
+            type="audio/mp3"
+          />
+        </audio>
+        <audio id="audio-7">
+          <source
+            src="https://s3.amazonaws.com/iamjoshellis-codepen/pens-of-rock/guitar/smoke-on-the-water-7.mp3"
+            preload="auto"
+            type="audio/mp3"
+          />
+        </audio>
+        <audio id="audio-8">
+          <source
+            src="https://s3.amazonaws.com/iamjoshellis-codepen/pens-of-rock/guitar/smoke-on-the-water-8.mp3"
+            preload="auto"
+            type="audio/mp3"
+          />
+        </audio>
+        <audio id="audio-9">
+          <source
+            src="https://s3.amazonaws.com/iamjoshellis-codepen/pens-of-rock/guitar/smoke-on-the-water-9.mp3"
+            preload="auto"
+            type="audio/mp3"
+          />
+        </audio>
+        <audio id="audio-10">
+          <source
+            src="https://s3.amazonaws.com/iamjoshellis-codepen/pens-of-rock/guitar/smoke-on-the-water-10.mp3"
+            preload="auto"
+            type="audio/mp3"
+          />
+        </audio>
+        <audio id="audio-11">
+          <source
+            src="https://s3.amazonaws.com/iamjoshellis-codepen/pens-of-rock/guitar/smoke-on-the-water-11.mp3"
+            preload="auto"
+            type="audio/mp3"
+          />
+        </audio>
+        <audio id="audio-12">
+          <source
+            src="https://s3.amazonaws.com/iamjoshellis-codepen/pens-of-rock/guitar/smoke-on-the-water-12.mp3"
+            preload="auto"
+            type="audio/mp3"
+          />
+        </audio>
       </div>
     </>
   );
