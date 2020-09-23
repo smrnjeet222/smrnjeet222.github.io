@@ -1,7 +1,9 @@
-import { TimelineMax } from "gsap";
+import { gsap, TimelineMax } from "gsap";
+import { CSSPlugin } from "gsap/CSSPlugin";
+
+gsap.registerPlugin(CSSPlugin);
 
 export default function guitarAnim() {
-  // window.addEventListener("load", () => {
   //Varibles for the animation
   const guitar = document.getElementById("guitar_2_");
 
@@ -100,8 +102,6 @@ export default function guitarAnim() {
     pluck.play();
     playAudio();
   }
-
   //Do the stuff when clicked
   guitar.addEventListener("click", rockOut);
-  // });
 }
