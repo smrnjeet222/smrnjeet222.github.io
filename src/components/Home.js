@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import SVG from "react-inlinesvg";
 
-import Guitar from "./Guitar.svg";
+import Guitar from "./Guitar.js";
 import bounce from "../script/bounce";
 import guitarAnim from "../script/guitarAnim";
 
@@ -9,13 +8,19 @@ export default function Home() {
   useEffect(() => {
     document.title =
       "Simranjeet Singh | Full Stack Developer | Python Developer";
+
     bounce();
+    guitarAnim();
+
     const s = document.querySelector(".Slast");
 
     s.style.opacity = 1;
     s.style.transform = "rotate(360deg)";
 
-    guitarAnim();
+    return () => {
+      s.style.opacity = 0;
+      s.style.transform = "rotate(0deg)";
+    };
   }, []);
 
   return (
@@ -86,7 +91,7 @@ export default function Home() {
         </span>
       </div>
       <div id="mysvg">
-        <SVG src={Guitar} className="guitarSvg" />
+        <Guitar className="guitarSvg" />
         <audio id="audio-1">
           <source
             src="https://s3.amazonaws.com/iamjoshellis-codepen/pens-of-rock/guitar/smoke-on-the-water-1.mp3"
