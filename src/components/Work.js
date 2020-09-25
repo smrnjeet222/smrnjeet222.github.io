@@ -100,13 +100,6 @@ export default function Work() {
           live="https://github.com/smrnjeet222/AutoMail"
         />
         <Post
-          img="https://raw.githubusercontent.com/smrnjeet222/Unity_Gamedevelopment/master/FreakyFrog/best.png"
-          name="Freaky Frog"
-          ext="c#"
-          git="https://github.com/smrnjeet222/Unity_Gamedevelopment"
-          live="https://smrnjeet-22.itch.io/freaky-frog"
-        />
-        <Post
           img="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/SudokuSolver/2.png"
           name="Sudoku Solver"
           ext="py"
@@ -114,11 +107,25 @@ export default function Work() {
           live="https://github.com/smrnjeet222/Python_Apps/tree/master/SudokuSolver"
         />
         <Post
-          img="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/Space-invaders/Sc.jpg"
-          name="Space-invaders"
-          ext="py"
-          git="https://github.com/smrnjeet222/Python_Apps/tree/master/Space-invaders"
-          live="https://github.com/smrnjeet222/Python_Apps/tree/master/Space-invaders"
+          img="https://raw.githubusercontent.com/smrnjeet222/Unity_Gamedevelopment/master/FreakyFrog/best.png"
+          name="Freaky Frog"
+          ext="c#"
+          git="https://github.com/smrnjeet222/Unity_Gamedevelopment"
+          live="https://smrnjeet-22.itch.io/freaky-frog"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Rc.png"
+          name="Ray Casting"
+          ext="js"
+          git="https://editor.p5js.org/smrnjeet222/collections/fvtHa48dt"
+          live="https://editor.p5js.org/smrnjeet222/sketches/j06TXs4ZF"
+        />
+        <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/newslaundry.png"
+          name="Newslaundry"
+          ext="js"
+          git="https://github.com/smrnjeet222/newslaundry"
+          live="https://smrnjeet222.github.io/newslaundry/"
         />
         <Post
           img="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Astar.png"
@@ -135,19 +142,20 @@ export default function Work() {
           live="https://smrnjeet222.github.io/ReactApps/"
         />
         <Post
+          img="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/Space-invaders/Sc.jpg"
+          name="Space-invaders"
+          ext="py"
+          git="https://github.com/smrnjeet222/Python_Apps/tree/master/Space-invaders"
+          live="https://github.com/smrnjeet222/Python_Apps/tree/master/Space-invaders"
+        />
+        <Post
           img="https://raw.githubusercontent.com/smrnjeet222/Python_Apps/master/Rock-Paper-Scissors/demo.jpg"
           name="Multiplayer R.P.S"
           ext="py"
           git="https://github.com/smrnjeet222/Python_Apps/tree/master/Rock-Paper-Scissors"
           live="https://github.com/smrnjeet222/Python_Apps/tree/master/Rock-Paper-Scissors"
         />
-        <Post
-          img="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Rc.png"
-          name="Ray Casting"
-          ext="js"
-          git="https://editor.p5js.org/smrnjeet222/collections/fvtHa48dt"
-          live="https://editor.p5js.org/smrnjeet222/sketches/j06TXs4ZF"
-        />
+
         <Post
           img="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/covid.png"
           name="Python Apps"

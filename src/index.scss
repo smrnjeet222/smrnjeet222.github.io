@@ -320,7 +320,7 @@ h1 {
   height: 25px;
   transform: translate(60% 50%);
   cursor: pointer;
-  &:hover polygon {
+  &:hover polyline {
     stroke: #000;
   }
   &:hover rect {
