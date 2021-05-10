@@ -31,17 +31,19 @@ export default function Skills() {
             The main area of my expertise is Web development and Python.
             <br />
             <br />
-            Python, HTML, CSS, JS , SASS, Bootstrap, building small and
+            Tech I know:
+            &nbsp;&nbsp; <b>Python &nbsp;|&nbsp;  Typescript  &nbsp;|&nbsp;  C/C++ </b><br />
             <br />
-            medium web apps with Django & React. | 5⭐ in Problem Solving
+            &nbsp;&nbsp; • &nbsp;&nbsp; ReactJs + NextJs , VueJs , Svelte<br />
+            &nbsp;&nbsp; • &nbsp;&nbsp; ChakraUI , MaterialUI , TailwindCSS , Bootstrap<br />
+            &nbsp;&nbsp; • &nbsp;&nbsp; NodeJs , Express , NestJs , MongoDB<br />
+            &nbsp;&nbsp; • &nbsp;&nbsp; Django (Python)<br />
+            &nbsp;&nbsp; • &nbsp;&nbsp; OpenCV , Image Processing<br />
+            &nbsp;&nbsp; • &nbsp;&nbsp; Database Management (SQL)<br />
+            &nbsp;&nbsp; • &nbsp;&nbsp; Data Science + Web Scraping + IT Automation<br />
+            &nbsp;&nbsp; • &nbsp;&nbsp; React Native<br />
+            &nbsp;&nbsp; • &nbsp;&nbsp; Blender + Unity3D<br />
             <br />
-            (Algorithms and Data Structures) on HackerRank.
-            <br />
-            <br />
-            I also have substantial experience in Python, with automation
-            scripts,
-            <br />
-            web scraping and stuff . <br />
             <br />
             Visit my&nbsp;
             <a
