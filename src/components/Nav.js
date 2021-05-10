@@ -96,7 +96,10 @@ export default function Nav() {
           </li>
         </ul>
       </div>
-      <a className="bkmrk" href="/Resume.html">
+
+      <a className="bkmrk" target="_blank"
+        href="./Resume.pdf"
+      >
         <img
           src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/blogdark.png"
           alt="Resume"
