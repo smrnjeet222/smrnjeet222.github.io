@@ -87,7 +87,7 @@ export default function Nav() {
           </li>
           <li>
             <a
-              href="https://twitter.com/Att_Sardar_ji"
+              href="https://twitter.com/smrnjeet222"
               target="_blank"
               rel="noopener noreferrer"
             >
