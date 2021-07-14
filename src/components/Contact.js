@@ -1,19 +1,23 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import bounce from "../script/bounce";
 
 export default function Contact() {
+
+  const search = useLocation().search;
+  const resp = new URLSearchParams(search).get('response');
+
+  const [thank, setThank] = useState(false);
+
   useEffect(() => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     document.title = "Simranjeet Singh | Contact Me";
-
+    setThank(resp);
+    setTimeout(() => setThank(false), 5000);
     bounce();
   }, []);
-
-  function handleSubmit(e) {
-    alert("Your Message is sent!");
-  }
 
   const spring = {
     type: "spring",
@@ -23,6 +27,20 @@ export default function Contact() {
 
   return (
     <>
+      {thank &&
+        <div style={{ position: "absolute", zIndex: 999999, top: "10px", left: "50%", transform: "translate(-50%, 0%)" }}>
+          <div style={{
+            padding: "2rem 4rem", backgroundColor: "#222", 
+            textAlign: "center", borderRadius: "1rem",
+            boxShadow: "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
+          }}>
+            <h3 style={{ color: "#23ffde", fontSize: "2rem" }}>
+              Thank you !
+            </h3>
+            <p style={{ color: "#fff", fontSize: "1rem" }}>We will soon get in touch 😃.</p>
+          </div>
+        </div>
+      }
       <div className="container home-page" style={{ zoom: "95%" }}>
         <span className="tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
         <div className="text-zone">
@@ -65,26 +83,19 @@ export default function Contact() {
           </p>
 
           <div className="contact">
-            <iframe
-              name="hidden_iframe"
-              title="hidden_iframe"
-              id="hidden_iframe"
-              style={{
-                display: "none",
-              }}
-            ></iframe>
             <form
               className="form"
-              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfw-BZLTTNI3Y9D9LbCBb5b56lpbOokb2P1win1ky8SP5lt8A/formResponse"
-              method="post"
-              target="hidden_iframe"
+              action="https://formsubmit.co/b6a7714e1b4daa06870a4ac3e0718e01"
+              method="POST"
               autoComplete="off"
-              onSubmit={handleSubmit}
             >
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://smrnjeet222.github.io/contact?response=true" />
+              <input type="text" name="_honey" style={{ "display": "none" }} />
               <motion.input
                 id="name"
                 type="text"
-                name="entry.649112156"
+                name="name"
                 placeholder="Name *"
                 required={true}
                 initial={{ y: "120vh" }}
@@ -96,7 +107,7 @@ export default function Contact() {
               <motion.input
                 id="email"
                 type="email"
-                name="entry.1560288382"
+                name="email"
                 placeholder="Email *"
                 required={true}
                 initial={{ y: "120vh" }}
@@ -108,7 +119,7 @@ export default function Contact() {
               <motion.input
                 id="sbj"
                 type="text"
-                name="entry.1406382583"
+                name="subject"
                 placeholder="Subject (optional)"
                 initial={{ y: "120vh" }}
                 animate={{ y: 0 }}
@@ -119,7 +130,7 @@ export default function Contact() {
               <motion.textarea
                 id="msg"
                 type="text"
-                name="entry.728219473"
+                name="message"
                 placeholder="Message *"
                 required={true}
                 cols="50"
