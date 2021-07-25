@@ -8,14 +8,6 @@ export const projects = [
     live: "http://mw.mait.ac.in/",
   },
   {
-    img: "https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/background.gif",
-    name: "FlyBuy",
-    ext: "vue",
-    lang: "py,js",
-    git: "https://github.com/smrnjeet222/FlyBuy-Backend-Django",
-    live: "https://github.com/smrnjeet222/FlyBuy-Backend-Django",
-  },
-  {
     img: "https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/blog.jpg",
     name: "Django Blog",
     ext: "py",
@@ -96,7 +88,7 @@ export const projects = [
     live: "https://github.com/smrnjeet222/Python_Apps",
   },
   {
-    img: "https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/background.gif",
+    img: "https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/dumpBox.png",
     name: "DumpBox",
     ext: "jsx",
     lang: "js",

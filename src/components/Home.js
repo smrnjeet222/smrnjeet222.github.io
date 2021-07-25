@@ -7,7 +7,7 @@ import guitarAnim from "../script/guitarAnim";
 export default function Home() {
   useEffect(() => {
     document.title =
-      "Simranjeet Singh | Full Stack Developer | Python Developer";
+      "Simranjeet Singh | Full Stack Developer | Blockchain Developer";
 
     bounce();
     guitarAnim();
@@ -67,7 +67,7 @@ export default function Home() {
             <span className="blast">r</span>
             <span className="blast">.</span>
           </h1>
-          <h2>Full Stack Developer / Python Programmer / Freelancer</h2>
+          <h2>Full Stack | Blockchain Developer </h2>
           <div className="icons">
             <a href="https://www.linkedin.com/in/smrnjeet222/">
               <i className="fab fa-linkedin fa-3x"></i>
