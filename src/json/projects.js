@@ -40,6 +40,14 @@ export const projects = [
     live: "https://smrnjeet222.github.io/Portfolio/",
   },
   {
+    img: "https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/covid.png",
+    name: "Python Apps",
+    ext: "py",
+    lang: "py",
+    git: "https://github.com/smrnjeet222/Python_Apps",
+    live: "https://github.com/smrnjeet222/Python_Apps",
+  },
+  {
     img: "https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/surepass/bgvAll.png",
     name: "Surepass",
     ext: "jsx",
@@ -78,14 +86,6 @@ export const projects = [
     lang: "js",
     git: "https://editor.p5js.org/smrnjeet222/collections/fvtHa48dt",
     live: "https://editor.p5js.org/smrnjeet222/sketches/T0o5woDT5",
-  },
-  {
-    img: "https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/covid.png",
-    name: "Python Apps",
-    ext: "py",
-    lang: "py",
-    git: "https://github.com/smrnjeet222/Python_Apps",
-    live: "https://github.com/smrnjeet222/Python_Apps",
   },
   {
     img: "https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/dumpBox.png",
