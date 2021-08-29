@@ -87,11 +87,11 @@ export default function Nav() {
           </li>
           <li>
             <a
-              href="https://twitter.com/smrnjeet222"
+              href="https://smrnjeet-22.itch.io/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-itch-io"></i>
             </a>
           </li>
         </ul>

@@ -10,7 +10,7 @@ export default function Home() {
       "Simranjeet Singh | Full Stack Developer | Blockchain Developer";
 
     bounce();
-    guitarAnim();
+    // guitarAnim();
 
     const s = document.querySelector(".Slast");
 
@@ -69,18 +69,19 @@ export default function Home() {
           </h1>
           <h2>Full Stack | Blockchain Developer </h2>
           <div className="icons">
-            <a href="https://www.linkedin.com/in/smrnjeet222/">
-              <i className="fab fa-linkedin fa-3x"></i>
+            <a href="https://twitter.com/smrnjeet222">
+              <i className="fab fa-twitter fa-3x"></i>
             </a>
             <a href="https://github.com/smrnjeet222">
               <i className="fab fa-github fa-3x"></i>
             </a>
+            <a href="https://www.linkedin.com/in/smrnjeet222/">
+              <i className="fab fa-linkedin fa-3x"></i>
+            </a>
             <a href="https://leetcode.com/smrnjeet222/">
               <i className="fa fa-code fa-3x"></i>
             </a>
-            <a href="https://smrnjeet-22.itch.io/">
-              <i className="fab fa-itch-io fa-3x"></i>
-            </a>
+
           </div>
         </div>
 
@@ -91,7 +92,12 @@ export default function Home() {
         </span>
       </div>
       <div id="mysvg">
-        <Guitar className="guitarSvg" />
+        <img
+          alt="hacker"
+          src={`https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/code1.svg`}
+        />
+
+        {/* <Guitar className="guitarSvg" />
         <audio id="audio-1">
           <source
             src="https://s3.amazonaws.com/iamjoshellis-codepen/pens-of-rock/guitar/smoke-on-the-water-1.mp3"
@@ -176,6 +182,7 @@ export default function Home() {
             type="audio/mp3"
           />
         </audio>
+  */}
       </div>
     </>
   );

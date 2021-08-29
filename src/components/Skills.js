@@ -36,7 +36,7 @@ export default function Skills() {
             <br />
             &nbsp;&nbsp; • &nbsp;&nbsp; ReactJs, NextJs , GatsbyJs , Svelte<br />
             &nbsp;&nbsp; • &nbsp;&nbsp; NodeJs , Express , MongoDB<br />
-            &nbsp;&nbsp; • &nbsp;&nbsp; Blockchain | Ethereum <br />
+            &nbsp;&nbsp; • &nbsp;&nbsp; Blockchain | Ethereum | Solana<br />
             &nbsp;&nbsp; • &nbsp;&nbsp; OpenCV , Image Processing<br />
             &nbsp;&nbsp; • &nbsp;&nbsp; Data Science + Web Scraping + IT Automation<br />
             &nbsp;&nbsp; • &nbsp;&nbsp; React Native<br />
@@ -67,7 +67,7 @@ export default function Skills() {
       <div id="mysvg">
         <img
           alt="hacker"
-          src={`https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/code${Math.floor(Math.random() * 4) + 1}.svg`}
+          src={`https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/code${Math.floor(Math.random() * 3) + 2}.svg`}
         />
       </div>
     </>

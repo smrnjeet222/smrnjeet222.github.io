@@ -58,10 +58,10 @@ export default function About() {
             <br />
             Follow me on&nbsp;
             <a
-              href="https://www.instagram.com/smrnjeet_22/"
+              href="https://twitter.com/smrnjeet222"
               style={{ color: "#23ffde" }}
             >
-              Instagram&nbsp;
+              Twitter&nbsp;
             </a>
             to know more or just&nbsp;
             <a href="/contact" style={{ color: "#23ffde" }}>
@@ -80,7 +80,7 @@ export default function About() {
         <img
           alt="hacker"
           src={`https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/code${
-            Math.floor(Math.random() * 4) + 1
+            Math.floor(Math.random() * 3) + 2
           }.svg`}
         />
       </div>
