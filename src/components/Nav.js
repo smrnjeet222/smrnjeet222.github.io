@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Nav() {
   return (
@@ -97,15 +97,15 @@ export default function Nav() {
         </ul>
       </div>
 
-      <a className="bkmrk" target="_blank"
-        href="./Resume.pdf"
+      <Link className="bkmrk" target="_blank"
+        to="/resume"
       >
         <img
           src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/blogdark.png"
           alt="Resume"
         />
         <span className="folded-corner"></span>
-      </a>
+      </Link>
     </>
   );
 }

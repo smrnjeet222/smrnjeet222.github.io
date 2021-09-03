@@ -69,16 +69,16 @@ export default function Home() {
           </h1>
           <h2>Full Stack | Blockchain Developer </h2>
           <div className="icons">
-            <a href="https://twitter.com/smrnjeet222">
+            <a href="https://twitter.com/smrnjeet222" target="_blank" >
               <i className="fab fa-twitter fa-3x"></i>
             </a>
-            <a href="https://github.com/smrnjeet222">
+            <a href="https://github.com/smrnjeet222" target="_blank" >
               <i className="fab fa-github fa-3x"></i>
             </a>
-            <a href="https://www.linkedin.com/in/smrnjeet222/">
+            <a href="https://www.linkedin.com/in/smrnjeet222/" target="_blank" >
               <i className="fab fa-linkedin fa-3x"></i>
             </a>
-            <a href="https://leetcode.com/smrnjeet222/">
+            <a href="https://leetcode.com/smrnjeet222/" target="_blank" >
               <i className="fa fa-code fa-3x"></i>
             </a>
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -12,6 +12,17 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
+
+
+function Resume() {
+
+  useEffect(() => {
+    window.location.href = "https://cdn.jsdelivr.net/gh/smrnjeet222/smrnjeet222/Resume.pdf";
+  }, []);
+
+  return null;
+}
+
 
 export default function App() {
   return (
@@ -36,6 +47,9 @@ export default function App() {
         </Route>
         <Route path={process.env.PUBLIC_URL + "/contact"} exact>
           <Contact />
+        </Route>
+        <Route path={process.env.PUBLIC_URL + "/resume"} exact>
+          <Resume />
         </Route>
         <Redirect to="/" />
       </Switch>
