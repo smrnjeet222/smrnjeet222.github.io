@@ -87,7 +87,7 @@ export default function Nav() {
           </li>
           <li>
             <a
-              href="https://smrnjeet-22.itch.io/"
+              href="https://smrnjeet222.itch.io/"
               target="_blank"
               rel="noopener noreferrer"
             >

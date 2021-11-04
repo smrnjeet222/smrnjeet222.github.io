@@ -150,26 +150,6 @@ export default function Contact() {
                 transition={{ delay: 0.9 }}
               />
             </form>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.9 }}
-              style={{
-                color: "aliceblue",
-                maxWidth: "60%",
-                fontSize: "1em",
-                margin: "5px 0 5px 2px",
-                transform: "translateY(-40px)",
-              }}
-            >
-              Or you can just mail me at ~&nbsp;
-              <a
-                href="mailto:smrnjeet222@gmail.com"
-                style={{ color: "#23ffde", fontSize: "1.3em" }}
-              >
-                smrnjeet222@gmail.com
-              </a>
-            </motion.p>
           </div>
         </div>
 

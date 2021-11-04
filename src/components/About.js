@@ -58,7 +58,7 @@ export default function About() {
             <br />
             Follow me on&nbsp;
             <a
-              href="https://twitter.com/smrnjeet222"
+              href="https://twitter.com/smrnjeet_22"
               style={{ color: "#23ffde" }}
             >
               Twitter&nbsp;
